@@ -151,6 +151,7 @@ class Window_ParametersItem(QFrame, RFT_Object):
 			# Process value with components
 			com = self.param.components
 
+
 			for k, v in com.items():
 				c = v.component
 

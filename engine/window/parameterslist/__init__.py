@@ -104,16 +104,6 @@ class Window_ParametersList(QFrame, RFT_Object):
 
 
 		for k, v in Tables.parameters.items():
-			if (len(v.components.keys()) == 0):
-				uid = Plugins.newUID()
-
-				v.components[uid] = RFT_Structure({
-					"component": None,
-					"value": None,
-					"swap": False
-				})
-
-
 			# Create new item
 			w = Window_ParametersItem(self, k)
 			w.update()

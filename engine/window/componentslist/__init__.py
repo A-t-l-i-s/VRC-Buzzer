@@ -1,4 +1,5 @@
 from engine.require import *
+from engine.plugins import *
 
 from .item import *
 
@@ -92,7 +93,19 @@ class Window_ComponentsList(QFrame, RFT_Object):
 
 
 		if (sel):
-			for k, v in sel.param.components.items():
+			com = sel.param.components
+
+			if (len(com) == 0):
+				uid = Plugins.newUID()
+
+				com[uid] = RFT_Structure({
+					"component": None,
+					"value": None,
+					"swap": False
+				})
+
+
+			for k, v in com.items():
 				# Create new item
 				w = Window_ComponentsItem(self, k, v)
 
