@@ -1,0 +1,12 @@
+@Extension: RyPile
+@Extension: Console
+@Extension: FileSystem
+
+
+
+
+
+@Popout: False
+@Run: ("python.exe", "VRC-Buzzer.py")
+
+

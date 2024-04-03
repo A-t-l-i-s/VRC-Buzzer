@@ -1,0 +1,36 @@
+
+
+atlis_shocker_enabled:
+  path: "/avatar/parameters/OSC/Shocker/Enabled"
+  plugin: "shocker enabled"
+  enabled: false
+  components: {}
+
+
+atlis_shocker_level:
+  path: "/avatar/parameters/OSC/Shocker/Level"
+  plugin: "shocker level"
+  enabled: false
+  components: {}
+
+
+atlis_shocker_duration:
+  path: "/avatar/parameters/OSC/Shocker/Duration"
+  plugin: "shocker duration"
+  enabled: false
+  components: {}
+
+
+atlis_shocker_punish:
+  path: "/avatar/parameters/Boop"
+  plugin: "shocker punish"
+  enabled: false
+  components: {}
+
+
+atlis_shocker_reward:
+  path: "/avatar/parameters/HeadPat"
+  plugin: "shocker reward"
+  enabled: false
+  components: {}
+

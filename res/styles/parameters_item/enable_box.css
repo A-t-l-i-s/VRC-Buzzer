@@ -1,0 +1,31 @@
+
+
+*{
+	font-family: Dosis;
+	font-size: 14px;
+	font-weight: bold;
+
+	background-color: transparent;
+}
+
+
+::indicator{
+	width: 17px;
+	height: 17px;
+
+	background-color: rgb(250, 0, 0);
+}
+
+::indicator:hover{
+	background-color: rgb(250, 80, 80);
+}
+
+
+::indicator:checked{
+	background-color: rgb(0, 150, 0);
+}
+
+::indicator:checked:hover{
+	background-color: rgb(80, 150, 80);
+}
+

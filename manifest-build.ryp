@@ -1,0 +1,80 @@
+@Extension: RyPile
+@Extension: Console
+@Extension: FileSystem
+
+
+
+
+
+@Run: ("windres.exe", "src/res/icon.rc", "-O",  "coff", "-o", "icon.res")
+@Run: ("windres.exe", "src/res/application.rc", "-O",  "coff", "-o", "application.res")
+@Wait
+
+
+
+@Extension: RyPile-C++
+
+@File: "src/VRC-Buzzer.cpp"
+@Out: "VRC-Buzzer.exe"
+
+@IncludePath: "src/include"
+@IncludePath: "C:/Python311/include"
+
+@LibraryPath: "C:/Python311/libs"
+
+@Library: "python3"
+@Library: "python311"
+
+@Extra: "icon.res"
+@Extra: "application.res"
+@Extra: "-L./bin"
+@Extra: "-Wno-int-to-pointer-cast"
+
+@Static
+@GUI
+
+@Bit: 64
+@Version: "c++20"
+@Compression: 2
+
+@Done
+@Wait
+
+
+
+@File: "src/VRC-Buzzer-Updater.cpp"
+@Out: "VRC-Buzzer-Updater.exe"
+
+@IncludePath: "src/include"
+@IncludePath: "C:/Python311/include"
+
+@LibraryPath: "C:/Python311/libs"
+
+@Library: "python3"
+@Library: "python311"
+
+@Extra: "icon.res"
+@Extra: "application.res"
+@Extra: "-L./bin"
+@Extra: "-Wno-int-to-pointer-cast"
+
+@Static
+
+@Bit: 64
+@Version: "c++20"
+@Compression: 2
+
+@Done
+@Wait
+
+
+
+_: os.remove("icon.res")
+_: os.remove("application.res")
+
+
+
+
+
+
+

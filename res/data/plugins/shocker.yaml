@@ -1,0 +1,18 @@
+
+
+enabled: False
+
+level: 0
+levelStep: 0.05
+levelDefault: 0
+
+duration: 0
+durationStep: 0.2
+durationDefault: 0
+
+reset: 60
+
+sinceBoop: 0
+sinceReset: 0
+sinceHeadpat: 0
+

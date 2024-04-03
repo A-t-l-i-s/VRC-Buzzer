@@ -1,0 +1,146 @@
+
+
+atlis_initiface_boop:
+  path: "/avatar/parameters/Boop"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_headpat:
+  path: "/avatar/parameters/HeadPat"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_leftcheek:
+  path: "/avatar/parameters/LeftCheek"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_rightcheek:
+  path: "/avatar/parameters/RightCheek"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_chin:
+  path: "/avatar/parameters/Chin"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_forehead:
+  path: "/avatar/parameters/Forehead"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_belly:
+  path: "/avatar/parameters/Belly"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_crotch:
+  path: "/avatar/parameters/Crotch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_leftbean:
+  path: "/avatar/parameters/Dynamics_LeftBean_Stretch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_rightbean:
+  path: "/avatar/parameters/Dynamics_RightBean_Stretch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_tail:
+  path: "/avatar/parameters/Dynamics_Tail_Stretch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+
+atlis_initiface_leash:
+  path: "/avatar/parameters/Dynamics_Leash_Stretch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }
+

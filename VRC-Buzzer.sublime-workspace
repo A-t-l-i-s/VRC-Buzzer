@@ -1,0 +1,1319 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"plug",
+				"plugin"
+			],
+			[
+				"Comp",
+				"Components_floor"
+			],
+			[
+				"par",
+				"parametersList"
+			],
+			[
+				"pa",
+				"param"
+			],
+			[
+				"comp",
+				"componentsSingle"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"setPl",
+				"setPlaceholder"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"set",
+				"setPlaceholderText"
+			],
+			[
+				"Window_Co",
+				"Window_ComponentsItem"
+			],
+			[
+				"en",
+				"enabled"
+			],
+			[
+				"tra",
+				"traceback"
+			],
+			[
+				"__",
+				"__all__"
+			],
+			[
+				"intif",
+				"intiface_enabled"
+			],
+			[
+				"han",
+				"handlePath"
+			],
+			[
+				"setS",
+				"setSeperator"
+			],
+			[
+				"para",
+				"parameterPath"
+			],
+			[
+				"hand",
+				"handlePath"
+			],
+			[
+				"compo",
+				"componentsList"
+			],
+			[
+				"pare",
+				"parameters"
+			],
+			[
+				"scan",
+				"scanButton"
+			],
+			[
+				"setC",
+				"setCurrentText"
+			],
+			[
+				"ass",
+				"asset"
+			],
+			[
+				"impo",
+				"importParametersButton"
+			],
+			[
+				"shoc",
+				"shockerTokenField"
+			],
+			[
+				"clas",
+				"classmethod"
+			],
+			[
+				"Plug",
+				"Plugins_Intiface"
+			],
+			[
+				"pl",
+				"plugins"
+			],
+			[
+				"Plugin",
+				"Plugins"
+			],
+			[
+				"multi",
+				"multiplierField"
+			],
+			[
+				"m",
+				"main"
+			],
+			[
+				"parame",
+				"parameterpath"
+			],
+			[
+				"de",
+				"devicesConnectedLabel"
+			],
+			[
+				"I",
+				"Intiface"
+			],
+			[
+				"as",
+				"asyncio"
+			],
+			[
+				"inf",
+				"runIntiface"
+			],
+			[
+				"sc",
+				"scanButton"
+			],
+			[
+				"int",
+				"intifaceTask"
+			],
+			[
+				"in",
+				"intifaceTask"
+			],
+			[
+				"init",
+				"intifaceLoop"
+			],
+			[
+				"se",
+				"seperator"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"writ",
+				"writeChar"
+			],
+			[
+				"Blea",
+				"BleakClient"
+			],
+			[
+				"call",
+				"callThread"
+			],
+			[
+				"Ble",
+				"Bluetooth"
+			],
+			[
+				"Tab",
+				"Tables_Object"
+			],
+			[
+				"Da",
+				"Data"
+			],
+			[
+				"std",
+				"stdio.h"
+			],
+			[
+				"RyP",
+				"RyPile_C_Extension"
+			],
+			[
+				"Com",
+				"Compile"
+			],
+			[
+				"ex",
+				"ext"
+			],
+			[
+				"Ry",
+				"RyPile_Python_Extension"
+			],
+			[
+				"load",
+				"loadExtension"
+			],
+			[
+				"Cons",
+				"Console_Extension"
+			],
+			[
+				"re",
+				"retValue"
+			],
+			[
+				"RFT_",
+				"RFT_Structure"
+			],
+			[
+				"RFT",
+				"RFT_Structure"
+			],
+			[
+				"w",
+				"while"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"type",
+				"type_"
+			],
+			[
+				"exte",
+				"extensions"
+			],
+			[
+				"st",
+				"strip"
+			],
+			[
+				"RFT_E",
+				"RFT_Exception"
+			],
+			[
+				"c",
+				"children"
+			],
+			[
+				"tr",
+				"traceback"
+			],
+			[
+				"exc",
+				"exceptionLevel"
+			],
+			[
+				"R",
+				"RFT_Log"
+			],
+			[
+				"Inc",
+				"Include"
+			],
+			[
+				"RF",
+				"RFT_Name"
+			],
+			[
+				"eval",
+				"evaluateVar"
+			],
+			[
+				"incl",
+				"includeStruct"
+			],
+			[
+				"thre",
+				"threading"
+			],
+			[
+				"Co",
+				"Core_Extension"
+			],
+			[
+				"enable",
+				"enableCommands"
+			],
+			[
+				"data",
+				"dataOut"
+			],
+			[
+				"new",
+				"newStruct"
+			],
+			[
+				"dat",
+				"dataCompile"
+			],
+			[
+				"RY",
+				"Rypple_Critical"
+			],
+			[
+				"mac",
+				"macro"
+			],
+			[
+				"macr",
+				"macroFrame"
+			],
+			[
+				"macro",
+				"macroChar"
+			],
+			[
+				"to",
+				"toBytecode"
+			],
+			[
+				"comm",
+				"commandChar"
+			],
+			[
+				"frame",
+				"frameDefaults"
+			],
+			[
+				"fra",
+				"frames"
+			],
+			[
+				"first",
+				"firstFrame"
+			],
+			[
+				"fir",
+				"firstStep"
+			],
+			[
+				"u",
+				"uuid"
+			],
+			[
+				"fram",
+				"frameDefaults"
+			],
+			[
+				"char",
+				"joinerChar"
+			],
+			[
+				"lin",
+				"lineL"
+			],
+			[
+				"l",
+				"lines"
+			],
+			[
+				"patt",
+				"stepPattern"
+			],
+			[
+				"__e",
+				"__new__"
+			],
+			[
+				"s",
+				"step"
+			],
+			[
+				"Ryp",
+				"Rypple_Step"
+			],
+			[
+				"has",
+				"hasChildren"
+			],
+			[
+				"sea",
+				"searchFile"
+			],
+			[
+				"Include",
+				"IncludePath"
+			],
+			[
+				"inc",
+				"includePaths"
+			],
+			[
+				"ext",
+				"extensions"
+			],
+			[
+				"Rypp",
+				"Rypple_Step"
+			],
+			[
+				"vl",
+				"value"
+			],
+			[
+				"It",
+				"Iterable"
+			],
+			[
+				"co",
+				"contains"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"e",
+				"extensions"
+			],
+			[
+				"ste",
+				"stepPattern"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"loade",
+				"loadedExtensions"
+			],
+			[
+				"mo",
+				"modules"
+			],
+			[
+				"va",
+				"variables"
+			],
+			[
+				"sep2",
+				"sep2_2"
+			],
+			[
+				"sep1",
+				"sep1_2"
+			],
+			[
+				"sep",
+				"sep1_1"
+			],
+			[
+				"sep_",
+				"sep2_1"
+			],
+			[
+				"LI",
+				"LIGHTCYAN_EX"
+			],
+			[
+				"mod",
+				"modules"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"threa",
+				"threadSign"
+			],
+			[
+				"ther",
+				"threads"
+			],
+			[
+				"thr",
+				"threading"
+			],
+			[
+				"eva",
+				"evaluateVar"
+			],
+			[
+				"step",
+				"stepPattern"
+			],
+			[
+				"value",
+				"valueGroup"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "engine/window/componentslist/item/__init__.py",
+			"settings":
+			{
+				"buffer_size": 2476,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "engine/window/parameterscontrol/parameters/newbutton.py",
+			"settings":
+			{
+				"buffer_size": 1025,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/PrePreProcessor.sublime-build",
+					""
+				],
+				[
+					"Packages/User/YiffBot.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/PrePreProcessor.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/VRC-Buzzer",
+		"/G/VRC-Buzzer/engine",
+		"/G/VRC-Buzzer/engine/components",
+		"/G/VRC-Buzzer/engine/window",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters"
+	],
+	"file_history":
+	[
+		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsbox.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/__init__.py",
+		"/G/VRC-Buzzer/engine/components/__init__.py",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/__init__.py",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsvalue.py",
+		"/G/VRC-Buzzer/engine/components/var.py",
+		"/G/VRC-Buzzer/engine/components/bitwise.py",
+		"/G/VRC-Buzzer/engine/plugins/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/parametervalue.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/deleteallbutton.py",
+		"/G/VRC-Buzzer/res/tables/parameters.table",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/swapbox.py",
+		"/G/VRC-Buzzer/res/styles/components_item/swap_box.css",
+		"/G/VRC-Buzzer/res/styles/parameters_item/main_selected.css",
+		"/G/VRC-Buzzer/res/styles/components_item/main.css",
+		"/G/VRC-Buzzer/res/styles/components_item/main_selected.css",
+		"/G/VRC-Buzzer/engine/window/componentslist/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/deletebutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/newbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/pluginsbox.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/enablebox.py",
+		"/G/VRC-Buzzer/engine/components/round.py",
+		"/G/VRC-Buzzer/engine/require.py",
+		"/G/VRC-Buzzer/engine/components/math.py",
+		"/G/VRC-Buzzer/engine/components/floor.py",
+		"/G/VRC-Buzzer/engine/components/not.py",
+		"/G/VRC-Buzzer/res/components/and.py",
+		"/G/VRC-Buzzer/res/components/not.py",
+		"/G/VRC-Buzzer/res/components/or.py",
+		"/G/VRC-Buzzer/res/components/div.py",
+		"/G/VRC-Buzzer/res/components/lshift.py",
+		"/G/VRC-Buzzer/res/components/rshift.py",
+		"/G/VRC-Buzzer/res/components/floor.py",
+		"/G/VRC-Buzzer/res/components/ceil.py",
+		"/G/VRC-Buzzer/res/components/round.py",
+		"/G/VRC-Buzzer/res/components/sqrt.py",
+		"/G/VRC-Buzzer/res/components/exp.py",
+		"/G/VRC-Buzzer/engine/components/rdiv.py",
+		"/G/VRC-Buzzer/res/components/add.py",
+		"/G/VRC-Buzzer/res/components/sub.py",
+		"/G/VRC-Buzzer/res/components/mul.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/parameterpath.py",
+		"/G/VRC-Buzzer/engine/window/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/__init__.py",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsconstant.py",
+		"/G/VRC-Buzzer/res/parameters/atlis_shocker.yaml",
+		"/G/FinalsDragon/config/site.conf",
+		"/G/FinalsDragon/config/service.conf",
+		"/G/FinalsDragon/config/ports.conf",
+		"/D/SteamLibrary/steamapps/common/Terraria/serverconfig.txt",
+		"/G/VRC-Buzzer/res/styles/components_list/main.css",
+		"/G/VRC-Buzzer/VRC-Buzzer.py",
+		"/G/VRC-Buzzer/engine/shocker/__init__.py",
+		"/G/VRC-OSC/res/styles/system_tray/main.css",
+		"/G/VRC-Buzzer/res/styles/parameters_item/plugins_box.css",
+		"/G/VRC-Buzzer/res/plugins/shocker.py",
+		"/G/VRC-Buzzer/res/plugins/intiface.py",
+		"/G/VRC-Buzzer/res/data/plugins/shocker.yaml",
+		"/G/VRC-Buzzer/res/data/plugins/intiface.yaml",
+		"/G/VRC-Buzzer/engine/plugins/base.py",
+		"/G/RFTLib/src/RFTLib/Config/python.py",
+		"/G/RFTLib/src/RFTLib/Config/__init__.py",
+		"/G/VRC-Buzzer/engine/plugins/intiface.py",
+		"/G/VRC-Buzzer/engine/plugins/shocker.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/enableallbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/disableallbutton.py",
+		"/G/VRC-Buzzer/res/tables/shocker.table",
+		"/G/VRC-Buzzer/res/data/qt/window.yaml",
+		"/G/VRC-Buzzer/res/tables/window.table",
+		"/G/VRC-Buzzer/res/styles/parameters_list/main.css",
+		"/G/VRC-Buzzer/res/styles/parameters_control/main.css",
+		"/G/VRC-Buzzer/engine/window/components/__init__.py",
+		"/G/VRC-Buzzer/manifest.ryp",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/components/__init__.py",
+		"/G/VRC-Buzzer/VRC-Buzzer-Updater.py",
+		"/G/VRC-Buzzer/res/styles/parameters_control/frame.css",
+		"/G/VRC-Buzzer/res/styles/parameters_control/seperator.css",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/importparametersbutton.py",
+		"/G/VRC-Buzzer/manifest-build.ryp",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/scanbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/shockerusernamefield.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/shockertokenfield.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/shockercodefield.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/newbutton.py",
+		"/G/AtlisAvatars/Assets/mcs.rsp",
+		"/G/AtlisAvatars/Assets/csc.rsp",
+		"/G/Notes/VRC Atlis.md",
+		"/G/AtlisAvatars/Assets/Avatars/Atlis/Animations/Marker/MarkerOn.anim",
+		"/G/AtlisAvatars/Assets/HypnoVisorV1-5/Base/Anims/VisorOn.anim",
+		"/G/AtlisAvatars/Assets/HypnoVisorV1-5/Base/Anims/VisorOff.anim",
+		"/G/AtlisAvatars/Assets/_PoiyomiShaders/Scripts/ThryEditor/Editor/ShaderOptimizer.cs",
+		"/C/Users/Admin/AppData/Roaming/Blender Foundation/Blender/4.0/scripts/addons/common.py",
+		"/C/Users/Admin/AppData/Roaming/Blender Foundation/Blender/4.0/scripts/addons/shape_key_extras.py",
+		"/D/SteamLibrary/steamapps/common/OVR Toolkit/CustomImages/READ ME.txt",
+		"/C/Users/Admin/Desktop/VRC-Buzzer/VRC-Buzzer-Updater.py",
+		"/G/VRC-Buzzer - Copy/VRC-Buzzer-Updater.py",
+		"/G/VRC-Buzzer/src/VRC-Buzzer.cpp",
+		"/G/VRC-Buzzer/src/VRC-Buzzer-Updater.cpp",
+		"/G/VRC-Buzzer/VRC-Buzzer-Updater.cpp",
+		"/G/VRC-Buzzer/VRC-Buzzer.cpp",
+		"/G/VRC-Buzzer/main.py",
+		"/G/VRC-Buzzer/include/require.hpp",
+		"/G/VRC-Buzzer/res/data/intiface.yaml",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanUp.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanSpawn.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanUpWait.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanDown.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanDownWait.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanOn.anim",
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanOff.anim",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/scanbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/deletebutton.py",
+		"/G/VRC-Buzzer/engine/intiface/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shockercodefield.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shockertokenfield.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/disableallbutton.py",
+		"/G/VRC-Buzzer/output.log",
+		"/I/engine/require.py",
+		"/I/wyvern.cpp",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/importparametersbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/deleteallbutton.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shockerusernamefield.py",
+		"/G/VRC-Buzzer/res/data/shocker.yaml",
+		"/G/VRC-Buzzer/res/data/shocker.nil_s"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 463.0,
+		"where_history":
+		[
+			"G:\\VRC-Buzzer\\engine\\window,<project filters>",
+			"G:\\VRC-Buzzer,<project filters>",
+			"<project>",
+			"C:\\Development\\Rypple\\Rypple,<project filters>",
+			"C:\\Python310\\Lib\\site-packages\\flask,<project filters>",
+			"C:\\Development\\Rypple\\Rypple,<project filters>",
+			"C:\\Development\\YiffBot\\Engine,<project filters>",
+			"C:\\Development\\YiffBot,<project filters>",
+			"C:\\Users\\Anthony Markovitz\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\minecraftWorlds\\9QEqY37IAAA=\\resource_packs,<project filters>",
+			"C:\\Users\\Anthony Markovitz\\Downloads\\SkyFactory\\behavior_packs,<project filters>",
+			"C:\\Users\\Anthony Markovitz\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\minecraftWorlds\\9QEqY37IAAA=\\behavior_packs,<project filters>",
+			"C:\\Users\\Anthony Markovitz\\Desktop\\Logs,<project filters>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sepera",
+			"seperator",
+			"@File: \"VRC-Buzzer.cpp\"\n\t@Out: \"VRC-Buzzer.exe\"",
+			"groanTube",
+			"groanTube/",
+			"\"title\":",
+			"BuzzNight",
+			"52300003-0023-4bd4-bbd5-a6920e4c5653",
+			"wzxc",
+			"changePath",
+			"print",
+			"macros",
+			"glob",
+			"<name of author>",
+			"<year>",
+			"<name of author>",
+			"<year>",
+			"()\n",
+			"fileEx",
+			"line",
+			"variables",
+			"self.var",
+			"# Call scope\n\t\t\t\t\tscope.run(step)",
+			"Rypple.",
+			"extensio",
+			"async",
+			"thread",
+			"callFun",
+			"namespace[",
+			"evaluateVar",
+			"json",
+			"Test",
+			"run",
+			"(\"\")",
+			"span",
+			"varPa",
+			"!=",
+			"varPatter",
+			"Terra",
+			"Slug",
+			"MHF_MushroomCow",
+			"thread",
+			"temp",
+			"items",
+			"uuid",
+			"elimiter",
+			"\"name\":",
+			"wait",
+			"loadE",
+			"JSON",
+			"project",
+			".file",
+			"file",
+			"Rypple_Path",
+			"register_error_handler",
+			"register_",
+			"/fonts/",
+			"proxy",
+			"\tkwargs = {}",
+			"files",
+			"ret",
+			"str(ret)",
+			"from engine.server.model import *",
+			"step.value != None",
+			"type",
+			"self.exit",
+			"itera",
+			"class ex",
+			"constVariables",
+			"const",
+			"lass extens",
+			"6af004",
+			"scope.run",
+			"run",
+			"\"Retu",
+			"__",
+			"namespace.",
+			",namespace=namespace",
+			"evaluate",
+			"time",
+			"random",
+			"a\"",
+			"original",
+			"ntpath.",
+			"ntpath.exists(path) and ntpath.isfile(path)",
+			"ntpath",
+			"path",
+			"ntpath.join",
+			"SAVING",
+			"self.saving",
+			"SAVING",
+			"Console.",
+			"Globals.",
+			"span",
+			"section",
+			"variable",
+			"cls,step,scope",
+			"getva",
+			"setVar",
+			"Variable",
+			"scope.format",
+			"extensions",
+			"state",
+			"... # Error",
+			"Iterable",
+			"time",
+			"sys",
+			"scope.format(step)",
+			"index",
+			"\t\n",
+			"groups.",
+			"Hyenid",
+			"re.",
+			"parseStep",
+			"h6",
+			"</p>",
+			"<p>",
+			"_GET",
+			",step",
+			"def execute(extension):",
+			"index",
+			",index",
+			".v",
+			"...",
+			".sys",
+			"scope.convert(value)",
+			"value=scope.format(step[\"value\"])",
+			"Method"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Components/Items/Groan Tube",
+			"Components/Items/Groan Tube/",
+			"\"name\":",
+			"Anthony Markovitz",
+			"Anthony Markkovitz",
+			"2023",
+			"Anthony Markovitz",
+			"2023",
+			"\"title\":",
+			"/data/fonts/",
+			"\n\n\n\tdef init(cls,parent):\n\t\t...\n\n",
+			"\n\n\n\tdef init(cls,parent):\n\t\t...\n\n\n",
+			"model",
+			"ret.dump()",
+			"from engine.types.Model import *",
+			"step.isCmd()",
+			",namespace",
+			"",
+			"path.is_file()",
+			"",
+			"div",
+			"span",
+			"cls,step,scope,namespace",
+			"Namespace",
+			"return Unknown()",
+			"scope.format(step.value)",
+			"step.",
+			"step",
+			"parseLine",
+			"h4",
+			"</h6>",
+			"<h6>",
+			"_POST",
+			"",
+			"@classmethod\n\tdef execute(cls):",
+			"@classmethod\ndef execute(cls):",
+			"",
+			"scope.convert(scope[\"value\"])",
+			"Extension",
+			"extension,parent,scope,step,index",
+			"...",
+			"",
+			"self.args.append(",
+			"swapPos",
+			"F",
+			"noSelect",
+			"bytesFromInt",
+			"this->_buffer",
+			"Application.",
+			"Application",
+			"_buffer",
+			"pygame.mixer.music",
+			"this->_array",
+			"RFT_List",
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "engine/window/componentslist/item/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										185,
+										186
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										160,
+										161
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "engine/window/parameterscontrol/parameters/newbutton.py",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 175.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 256.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/RyPile.sublime-build",
+	"project": "VRC-Buzzer.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"src\\Rypple\\scope.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,19 @@
+
+
+*{
+	font-family: Dosis;
+	font-size: 15px;
+	font-weight: bold;
+
+	padding: 3px;
+
+	border: none;
+	border-radius: 4px;
+
+	color: white;
+	selection-color: white;
+
+	background-color: rgb(20, 20, 20);
+	selection-background-color: rgb(140, 20, 70);
+}
+
