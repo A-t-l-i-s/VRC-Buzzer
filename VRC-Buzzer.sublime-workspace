@@ -523,7 +523,7 @@
 			"file": "engine/require.py",
 			"settings":
 			{
-				"buffer_size": 3124,
+				"buffer_size": 3126,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -537,7 +537,7 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					4,
@@ -547,7 +547,37 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAkAAAAAAAAACQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					1,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
 					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -636,7 +666,12 @@
 	},
 	"expanded_folders":
 	[
-		"/G/VRC-Buzzer"
+		"/G/VRC-Buzzer",
+		"/G/VRC-Buzzer/engine",
+		"/G/VRC-Buzzer/engine/window",
+		"/G/VRC-Buzzer/engine/window/componentslist",
+		"/G/VRC-Buzzer/engine/window/parameterslist",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item"
 	],
 	"file_history":
 	[
@@ -1009,15 +1044,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3124,
+						"buffer_size": 3126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								918,
+								918
 							]
 						],
 						"settings":
@@ -1029,24 +1064,24 @@
 								{
 									"1":
 									[
-										76,
-										77
+										1073,
+										1074
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/square_bracket.png",
-										"region.bluish"
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										22,
-										23
+										917,
+										918
 									]
 								},
 								"unmatched":
@@ -1055,36 +1090,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1100,16 +1130,21 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,

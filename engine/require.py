@@ -1,5 +1,5 @@
 import sys
-sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
+# sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
 import io
@@ -70,13 +70,13 @@ from RFTLib.Tables import *
 qtApp = QApplication([""])
 qtApp.setStyle("Fusion")
 
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/Bold.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/ExtraBold.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/ExtraLight.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/Light.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/Medium.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/Regular.ttf")
-QFontDatabase.addApplicationFont("./res/fonts/Dosis/SemiBold.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-Bold.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-ExtraBold.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-ExtraLight.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-Light.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-Medium.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-Regular.ttf")
+QFontDatabase.addApplicationFont("./res/fonts/Dosis-SemiBold.ttf")
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -84,7 +84,7 @@ QFontDatabase.addApplicationFont("./res/fonts/Dosis/SemiBold.ttf")
 # ~~~~~~~~~~~~~ Data ~~~~~~~~~~~~~
 Data_Obj = RFT_Config(
 	"./res/data",
-	(RFT_Config_NIL, RFT_Config_YAML,)
+	(RFT_Config_NIL, RFT_Config_YAML)
 )
 
 Data = Data_Obj.data

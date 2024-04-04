@@ -83,13 +83,8 @@ class Window_ComponentsList(QFrame, RFT_Object):
 	def reload(self):
 		self.clear()
 
-		# Disable delete button
-		self.parent.parametersControl.parametersWidget.deleteButton.setEnabled(False)
-
-
 		sel = self.parent.parametersList.selected
 		selC = self.selected
-
 
 
 		if (sel):
