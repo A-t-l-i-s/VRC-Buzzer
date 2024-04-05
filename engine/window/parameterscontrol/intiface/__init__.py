@@ -1,6 +1,7 @@
 from engine.require import *
+from engine.intiface import *
 
-from .scanbutton import *
+from .scanbox import *
 
 
 
@@ -46,14 +47,70 @@ class Window_ParametersControl_Intiface(QFrame, RFT_Object):
 
 
 
+		# Title
+		self.title = QLabel("Intiface")
+		self.title.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+		self.title.setStyleSheet(Styles.parameters_control.title)
+		self.layout.addWidget(self.title)
 
-		self.devicesConnectedLabel = QLabel()
-		self.devicesConnectedLabel.setStyleSheet(Styles.parameters_control.device_list)
-		self.layout.addWidget(self.devicesConnectedLabel)
 
 
-		self.scanButton = Window_ParametersControl_ScanButton(self)
-		self.layout.addWidget(self.scanButton)
+		# Vertical layout
+		self.layoutH = QHBoxLayout()
+		self.layoutH.setSpacing(5)
+		self.layoutH.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignHCenter)
+		
+		self.layout.addLayout(self.layoutH)
+
+
+		# Devices list label
+		self.devicesLabel = QLabel()
+		self.devicesLabel.setFixedWidth(125)
+		self.devicesLabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+		self.devicesLabel.setStyleSheet(Styles.parameters_control.device_list)
+		self.layoutH.addWidget(self.devicesLabel)
+
+		# Scan for devices checkbox
+		self.scanBox = Window_ParametersControl_ScanBox(self)
+		self.layoutH.addWidget(self.scanBox)
+
+
+
+		# ~~~~~~~~~~~~~ Timer ~~~~~~~~~~~~
+		self.timer = QTimer()
+		self.timer.setInterval(100)
+		self.timer.timeout.connect(self._timeout)
+		self.timer.start()
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
+	def _timeout(self):
+		# Set scan box checked if scanning
+		v = Data.intiface.scanning
+		if (self.scanBox.isChecked() != v):
+			self.scanBox.setChecked(v)
+
+
+
+		# Display connected devices
+		text = ""
+
+		if (Intiface.client):
+			for k, v in Intiface.client.devices.items():
+				text += v.name + "\n"
+
+			# Strip text
+			text = text.strip()
+
+		if (not text):
+			text = "No Devices"
+
+		# Set text
+		self.devicesLabel.setText(text)
+	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
 

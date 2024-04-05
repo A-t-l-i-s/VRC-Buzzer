@@ -4,13 +4,13 @@ from engine.require import *
 
 
 
-__all__ = ("Window_ParametersControl_ScanButton",)
+__all__ = ("Window_ParametersControl_ScanBox",)
 
 
 
 
 
-class Window_ParametersControl_ScanButton(QPushButton, RFT_Object):
+class Window_ParametersControl_ScanBox(QCheckBox, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 
@@ -21,29 +21,30 @@ class Window_ParametersControl_ScanButton(QPushButton, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setText("Scan")
-		self.setFixedSize(150, 25)
+		self.setText(None)
+		self.setFixedWidth(17)
+		self.setChecked(Data.intiface.scanning)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 		# ~~~~~~~~~~ Stylesheet ~~~~~~~~~~
-		self.setStyleSheet(Styles.window.button)
+		self.setStyleSheet(Styles.window.checkbox)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 		# ~~~~~~~~~~~~ Signals ~~~~~~~~~~~
-		self.pressed.connect(self._pressed)
+		self.toggled.connect(self._toggled)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
-	def _pressed(self):
-		if (Data.intiface.scanning):
-			self.setText("Scan")
+	def _toggled(self, checked):
+		# Set enabled/disabled
+		Data.intiface.scanning = checked
 
-		else:
-			self.setText("Scanning")
 
-		Data.intiface.scanning = not Data.intiface.scanning
+
+
+
 

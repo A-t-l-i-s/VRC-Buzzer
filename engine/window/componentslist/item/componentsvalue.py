@@ -24,7 +24,7 @@ class Window_ComponentsItem_ComponentsValue(QLineEdit, RFT_Object):
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
 		self.setText("")
 		self.setPlaceholderText("None")
-		self.setFixedWidth(140)
+		self.setFixedWidth(60)
 
 		self.setPlaceholder(self.parent.param.value)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

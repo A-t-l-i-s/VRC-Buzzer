@@ -27,7 +27,7 @@ class Window_ComponentsList(QFrame, RFT_Object):
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
 		self.setEnabled(True)
-		self.setFixedWidth(310)
+		self.setFixedWidth(210)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

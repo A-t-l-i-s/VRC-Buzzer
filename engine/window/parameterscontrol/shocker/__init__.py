@@ -48,6 +48,11 @@ class Window_ParametersControl_Shocker(QFrame, RFT_Object):
 
 
 
+		self.title = QLabel("Shocker")
+		self.title.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+		self.title.setStyleSheet(Styles.parameters_control.title)
+		self.layout.addWidget(self.title)
+
 
 		self.shockerUsernameField = Window_ParametersControl_ShockerUsernameField(self)
 		self.layout.addWidget(self.shockerUsernameField)

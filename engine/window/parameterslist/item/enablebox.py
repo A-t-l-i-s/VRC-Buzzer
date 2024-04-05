@@ -21,8 +21,8 @@ class Window_ParametersItem_EnableBox(QCheckBox, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setChecked(self.parent.param.enabled)
 		self.setText(None)
+		self.setChecked(self.parent.param.enabled)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

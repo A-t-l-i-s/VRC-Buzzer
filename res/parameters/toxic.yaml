@@ -1,0 +1,18 @@
+
+toxic_initiface_enabled:
+  path: "/avatar/parameters/Enable_Tail"
+  plugin: "intiface enabled"
+  enabled: false
+  components: {}
+
+toxic_initiface_tail:
+  path: "/avatar/parameters/Tail/_Stretch"
+  plugin: "intiface level"
+  enabled: false
+  components: {
+    "mult": {
+      "component": "mul",
+      "value": 1,
+      "swap": False
+    }
+  }

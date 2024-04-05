@@ -153,30 +153,32 @@ class Window_ParametersItem(QFrame, RFT_Object):
 
 
 			for k, v in com.items():
+
 				c = v.component
 
 				# If component exists
 				if (Components.components.contains(c)):
 					func = Components.components[c]
 
+					if (value != None):
+						if (v.value != None or c in Components.componentsSingle):
+							if (func):
+								# Call function
+								try:
+									v = func(
+										value,
+										v.value,
+										v.swap
+									)
 
-					if (func):
-						# Call function
-						try:
-							v = func(
-								value,
-								v.value,
-								v.swap
-							)
-
-						except:
-							print(traceback.format_exc())
-							v = None
+								except:
+									print(traceback.format_exc())
+									v = None
 
 
-						# If function returned correct value
-						if (isinstance(v, (int, float, bool))):
-							value = v
+								# If function returned correct value
+								if (isinstance(v, (int, float, bool))):
+									value = v
 
 
 

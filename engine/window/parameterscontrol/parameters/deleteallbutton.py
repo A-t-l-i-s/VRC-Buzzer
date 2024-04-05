@@ -65,7 +65,7 @@ class Window_ParametersControl_DeleteAllButton(QPushButton, RFT_Object):
 			cl.selected = None
 
 
-		elif (pls):
+		else:
 			# Clear parameters list
 			pl.clear()
 

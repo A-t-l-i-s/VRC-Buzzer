@@ -1,5 +1,5 @@
 import sys
-# sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
+sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
 import io

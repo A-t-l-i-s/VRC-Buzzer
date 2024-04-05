@@ -55,7 +55,7 @@ class Plugin:
 			if (value):
 				t = time.time()
 
-				if ((config.duration / 3) <= (t - config.sinceBoop)):
+				if ((config.duration / 5) <= (t - config.sinceBoop)):
 					# Shock as punishment
 					Shocker.addShock(
 						round(config.level * 100),

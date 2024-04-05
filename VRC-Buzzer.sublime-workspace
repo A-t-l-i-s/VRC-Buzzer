@@ -523,7 +523,7 @@
 			"file": "engine/require.py",
 			"settings":
 			{
-				"buffer_size": 3126,
+				"buffer_size": 3123,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -537,7 +537,7 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAA8L8"
+					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					4,
@@ -547,7 +547,7 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAkAAAAAAAAACQAAAAAAAAAAAAAAAAA8L8"
+					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					1,
@@ -557,7 +557,7 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACIAAAAAAAAAIgAAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					2,
@@ -567,7 +567,7 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
-					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					3,
@@ -577,7 +577,43 @@
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACIAAAAAAAAAIgAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"BwAAAJMHAAAAAAAAkwcAAAAAAAABAAAAL1EHAAAAAAAAUQcAAAAAAAABAAAALxAHAAAAAAAAEAcAAAAAAAABAAAAL9AGAAAAAAAA0AYAAAAAAAABAAAAL4sGAAAAAAAAiwYAAAAAAAABAAAAL0cGAAAAAAAARwYAAAAAAAABAAAALwgGAAAAAAAACAYAAAAAAAABAAAALw",
+					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAcAAAAJBgAAAAAAAAkGAAAAAAAAAAAAAAAA8L9IBgAAAAAAAEgGAAAAAAAAAAAAAAAA8L+MBgAAAAAAAIwGAAAAAAAAAAAAAAAA8L/RBgAAAAAAANEGAAAAAAAAAAAAAAAA8L8RBwAAAAAAABEHAAAAAAAAAAAAAAAA8L9SBwAAAAAAAFIHAAAAAAAAAAAAAAAA8L+UBwAAAAAAAJQHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"BwAAAI0HAAAAAAAAjgcAAAAAAAAAAAAATAcAAAAAAABNBwAAAAAAAAAAAAAMBwAAAAAAAA0HAAAAAAAAAAAAAM0GAAAAAAAAzgYAAAAAAAAAAAAAiQYAAAAAAACKBgAAAAAAAAAAAABGBgAAAAAAAEcGAAAAAAAAAAAAAAgGAAAAAAAACQYAAAAAAAAAAAAA",
+					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAcAAAAIBgAAAAAAAAgGAAAAAAAAAAAAAAAA8L9GBgAAAAAAAEYGAAAAAAAAAAAAAAAA8L+JBgAAAAAAAIkGAAAAAAAAAAAAAAAA8L/NBgAAAAAAAM0GAAAAAAAAAAAAAAAA8L8MBwAAAAAAAAwHAAAAAAAAAAAAAAAA8L9MBwAAAAAAAEwHAAAAAAAAAAAAAAAA8L+NBwAAAAAAAI0HAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAADMIAAAAAAAAMwgAAAAAAAABAAAALA",
+					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA0CAAAAAAAADQIAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					22,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
+					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABPAAAAAAAAAE8AAAAAAAAAAAAAAAAA8L8"
 				]
 			]
 		}
@@ -666,15 +702,11 @@
 	},
 	"expanded_folders":
 	[
-		"/G/VRC-Buzzer",
-		"/G/VRC-Buzzer/engine",
-		"/G/VRC-Buzzer/engine/window",
-		"/G/VRC-Buzzer/engine/window/componentslist",
-		"/G/VRC-Buzzer/engine/window/parameterslist",
-		"/G/VRC-Buzzer/engine/window/parameterslist/item"
+		"/G/VRC-Buzzer"
 	],
 	"file_history":
 	[
+		"/C/Misc/Information.yml",
 		"/G/VRC-Buzzer/engine/window/parameterslist/item/__init__.py",
 		"/G/VRC-Buzzer/engine/window/componentslist/__init__.py",
 		"/G/VRC-Buzzer/engine/window/parameterslist/__init__.py",
@@ -801,8 +833,7 @@
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/disableallbutton.py",
 		"/G/VRC-Buzzer/output.log",
 		"/I/engine/require.py",
-		"/I/wyvern.cpp",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/importparametersbutton.py"
+		"/I/wyvern.cpp"
 	],
 	"find":
 	{
@@ -1044,15 +1075,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3126,
+						"buffer_size": 3123,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								918,
-								918
+								1369,
+								1369
 							]
 						],
 						"settings":
@@ -1062,27 +1093,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										1073,
-										1074
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										917,
-										918
-									]
 								},
 								"unmatched":
 								{
@@ -1090,61 +1106,61 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,

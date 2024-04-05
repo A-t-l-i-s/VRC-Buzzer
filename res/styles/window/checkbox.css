@@ -9,6 +9,11 @@
 }
 
 
+QWidget{
+	border: none;
+}
+
+
 ::indicator{
 	width: 17px;
 	height: 17px;
@@ -28,4 +33,5 @@
 ::indicator:checked:hover{
 	background-color: rgb(80, 150, 80);
 }
+
 

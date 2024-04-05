@@ -1,5 +1,11 @@
 
 
+atlis_initiface_enabled:
+  path: "/avatar/parameters/OSC/Intiface/Enabled"
+  plugin: "intiface enabled"
+  enabled: false
+  components: {}
+
 atlis_initiface_boop:
   path: "/avatar/parameters/Boop"
   plugin: "intiface level"

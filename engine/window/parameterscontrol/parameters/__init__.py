@@ -52,27 +52,36 @@ class Window_ParametersControl_Parameter(QFrame, RFT_Object):
 
 
 
+		# New parameter/component button
 		self.newButton = Window_ParametersControl_NewButton(self)
 		self.layout.addWidget(self.newButton)
 
+		# Delete parameter/component button
 		self.deleteButton = Window_ParametersControl_DeleteButton(self)
 		self.layout.addWidget(self.deleteButton)
 
+		# Delete all parameters/components
 		self.deleteAllButton = Window_ParametersControl_DeleteAllButton(self)
 		self.layout.addWidget(self.deleteAllButton)
 
 
+
+		# Seperator
 		l = QLabel()
 		l.setStyleSheet(Styles.parameters_control.seperator)
 		self.layout.addWidget(l)
 
-		
+
+
+		# Enable all parameters		
 		self.enableAllButton = Window_ParametersControl_EnableAllButton(self)
 		self.layout.addWidget(self.enableAllButton)
 
+		# Disable all parameters		
 		self.disableAllButton = Window_ParametersControl_DisableAllButton(self)
 		self.layout.addWidget(self.disableAllButton)
 
+		# Import new parameters		
 		self.importParametersButton = Window_ParametersControl_ImportParametersButton(self)
 		self.layout.addWidget(self.importParametersButton)
 

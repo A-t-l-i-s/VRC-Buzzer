@@ -16,6 +16,11 @@ class Plugin:
 
 
 
+	def scan(path, value):
+		Data.intiface.scanning = bool(value)
+
+
+
 	def level(path, value):
 		if (isinstance(value, (int, float, bool))):
 			Data.plugins.intiface.level = float(value)
@@ -27,6 +32,10 @@ class Plugin:
 	entries = {
 		"enabled": {
 			"callback": enabled
+		},
+
+		"scan": {
+			"callback": scan
 		},
 
 		"level": {

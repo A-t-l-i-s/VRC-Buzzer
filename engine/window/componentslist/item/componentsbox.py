@@ -22,7 +22,7 @@ class Window_ComponentsItem_ComponentsBox(QComboBox, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setFixedSize(100, 25)
+		self.setFixedSize(90, 25)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -86,32 +86,3 @@ class Window_ParametersControl(QFrame, RFT_Object):
 		self.layout.addWidget(self.intifaceWidget)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-		# ~~~~~~~~~~~~~ Timer ~~~~~~~~~~~~
-		self.timer = QTimer()
-		self.timer.setInterval(100)
-		self.timer.timeout.connect(self._timeout)
-		self.timer.start()
-		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
-	def _timeout(self):
-		text = ""
-
-		if (Intiface.client):
-			for k, v in Intiface.client.devices.items():
-				text += v.name + "\n"
-
-			# Strip text
-			text = text.strip()
-
-		if (not text):
-			text = "No Devices Connected"
-
-		# Set text
-		self.intifaceWidget.devicesConnectedLabel.setText(text)
-	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-

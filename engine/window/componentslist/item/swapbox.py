@@ -21,14 +21,14 @@ class Window_ComponentsItem_SwapBox(QCheckBox, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setChecked(self.parent.param.swap)
 		self.setText(None)
+		self.setChecked(self.parent.param.swap)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 		# ~~~~~~~~~~ Stylesheet ~~~~~~~~~~
-		self.setStyleSheet(Styles.components_item.swap_box)
+		self.setStyleSheet(Styles.window.checkbox)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
