@@ -152,6 +152,9 @@ class Window_ParametersItem(QFrame, RFT_Object):
 			com = self.param.components
 
 
+			orig = value
+
+
 			for k, v in com.items():
 
 				c = v.component
@@ -211,7 +214,11 @@ class Window_ParametersItem(QFrame, RFT_Object):
 				if (func):
 					try:
 						# Call function
-						func(path, value)
+						func(
+							plugin.inst,
+							path,
+							value
+						)
 
 					except:
 						print(traceback.format_exc())

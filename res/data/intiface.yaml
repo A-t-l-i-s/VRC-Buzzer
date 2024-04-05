@@ -3,5 +3,4 @@
 port: 9979
 executable: "./bin/intiface.exe"
 
-scanning: False
 

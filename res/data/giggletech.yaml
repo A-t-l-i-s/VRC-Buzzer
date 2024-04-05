@@ -1,0 +1,7 @@
+
+
+port: 8888
+
+parameter_led: /avatar/parameters/led
+parameter_motor: /avatar/parameters/motor
+

@@ -1,5 +1,5 @@
 import sys
-sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
+# sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
 import io
@@ -138,16 +138,30 @@ Tables_Obj = RFT_Tables(
 
 Tables = Tables_Obj.data
 
-Tables.window.default(
-	Data.qt.window
+
+Tables.window.default( # Allocate window table
+	{
+		"width": Data.qt.window.width,
+		"height": Data.qt.window.height
+	}
 )
 
-Tables.parameters.default(
-	Data.osc.parameters
+Tables.parameters.default( # Allocate parameters table
+	{}
 )
 
-Tables.shocker.default(
-	Data.shocker
+Tables.shocker.default( # Allocate shocker table
+	{
+		"username": None,
+		"code": None,
+		"token": None
+	}
+)
+
+Tables.giggletech.default( # Allocate giggletech table
+	{
+		"ip": None
+	}
 )
 
 

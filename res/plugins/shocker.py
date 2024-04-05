@@ -1,5 +1,6 @@
 from engine.require import *
 from engine.shocker import *
+from engine.plugins.base import *
 
 
 
@@ -11,81 +12,96 @@ __all__ = ("Plugin",)
 
 
 
-class Plugin:
-	def enabled(path, value):
-		Data.plugins.shocker.enabled = bool(value)
+class Plugin(Plugins_Base):
+	def init(cls):
+		cls.config = Data.plugins.shocker
+
+		Data.console.allocate("shocker")
 
 
 
-	def level(path, value):
-		config = Data.plugins.shocker
+	def enabled(cls, path, value):
+		cls.config.enabled = bool(value)
+
+		# Update console values
+		cls.updateConsole()
+
+
+
+	def level(cls, path, value):
 		if (isinstance(value, (int, float, bool))):
 			value = float(value)
-			config.sinceReset = time.time()
+			cls.config.sinceReset = time.time()
 
 			if (value):
-				config.level = value
-				config.levelDefault = value
+				cls.config.level = value
+				cls.config.levelDefault = value
 
 			else:
-				config.level = 0
-				config.levelDefault = 0
+				cls.config.level = 0
+				cls.config.levelDefault = 0
+
+		# Update console values
+		cls.updateConsole()
 
 
 
-	def duration(path, value):
-		config = Data.plugins.shocker
+	def duration(cls, path, value):
 		if (isinstance(value, (int, float, bool))):
 			value = float(value)
-			config.sinceReset = time.time()
+			cls.config.sinceReset = time.time()
 
 			if (value):
-				config.duration = value * 15
-				config.durationDefault = config.duration
+				cls.config.duration = value * 15
+				cls.config.durationDefault = cls.config.duration
 
 			else:
-				config.duration = 0
-				config.durationDefault = 0
+				cls.config.duration = 0
+				cls.config.durationDefault = 0
+
+		# Update console values
+		cls.updateConsole()
 
 
 
-	def punish(path, value):
-		config = Data.plugins.shocker
-		if (config.enabled):
+	def punish(cls, path, value):
+		if (cls.config.enabled):
 			if (value):
 				t = time.time()
 
-				if ((config.duration / 5) <= (t - config.sinceBoop)):
+				if ((cls.config.duration / 5) <= (t - cls.config.sinceBoop)):
 					# Shock as punishment
 					Shocker.addShock(
-						round(config.level * 100),
-						round(config.duration * 1000)
+						round(cls.config.level * 100),
+						round(cls.config.duration * 1000)
 					)
 
 					# Step up level and duration as punishment
-					config.level = min(
-						config.level + config.levelStep,
+					cls.config.level = min(
+						cls.config.level + cls.config.levelStep,
 						1
 					)
 
-					config.duration = min(
-						config.duration + config.durationStep,
+					cls.config.duration = min(
+						cls.config.duration + cls.config.durationStep,
 						15
 					)
 
 					# Time since last boop
-					config.sinceBoop = t
-					config.sinceReset = t
+					cls.config.sinceBoop = t
+					cls.config.sinceReset = t
+
+		# Update console values
+		cls.updateConsole()
 
 
 
-	def reward(path, value):
-		config = Data.plugins.shocker
-		if (config.enabled):
+	def reward(cls, path, value):
+		if (cls.config.enabled):
 			if (value):
 				t = time.time()
 
-				if (.2 <= (t - config.sinceHeadpat)):
+				if (.2 <= (t - cls.config.sinceHeadpat)):
 					# Vibrate as reward
 					Shocker.addVibrate(
 						10,
@@ -93,36 +109,46 @@ class Plugin:
 					)
 
 					# Set default shock level/duration
-					config.level = config.levelDefault
-					config.duration = config.durationDefault
+					cls.config.level = cls.config.levelDefault
+					cls.config.duration = cls.config.durationDefault
 					
 					# Time since last headpat
-					config.sinceHeadpat = t
-					config.sinceReset = t
+					cls.config.sinceHeadpat = t
+					cls.config.sinceReset = t
 
+		# Update console values
+		cls.updateConsole()
+
+
+
+	@classmethod
+	def updateConsole(cls):
+		Data.console.shocker.enabled = f"Shocker Enabled: {cls.config.enabled}"
+		Data.console.shocker.level = f"Shocker Level: {cls.config.level * 100:.2f}%"
+		Data.console.shocker.duration = f"Shocker Duration: {cls.config.duration:.2f}s"
 
 
 
 
 	entries = {
-		"enabled": {
+		"shocker enabled": {
 			"callback": enabled
 		},
 
-		"level": {
+		"shocker level": {
 			"callback": level
 		},
 
-		"duration": {
+		"shocker duration": {
 			"callback": duration
 		},
 
 
-		"punish": {
+		"shocker punish": {
 			"callback": punish
 		},
 
-		"reward": {
+		"shocker reward": {
 			"callback": reward
 		}
 	}

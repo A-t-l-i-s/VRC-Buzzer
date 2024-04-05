@@ -5,6 +5,12 @@ toxic_initiface_enabled:
   enabled: false
   components: {}
 
+toxic_initiface_scanning:
+  path: null
+  plugin: "intiface scanning"
+  enabled: false
+  components: {}
+
 toxic_initiface_tail:
   path: "/avatar/parameters/Tail/_Stretch"
   plugin: "intiface level"

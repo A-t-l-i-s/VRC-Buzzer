@@ -1,16 +1,17 @@
 from engine.require import *
+from engine.giggletech import *
 
 
 
 
 
-__all__ = ("Window_ParametersControl_ShockerUsernameField",)
+__all__ = ("Window_ParametersControl_GiggleTech_IPField",)
 
 
 
 
 
-class Window_ParametersControl_ShockerUsernameField(QLineEdit, RFT_Object):
+class Window_ParametersControl_GiggleTech_IPField(QLineEdit, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 
@@ -21,8 +22,8 @@ class Window_ParametersControl_ShockerUsernameField(QLineEdit, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setText(Tables.shocker.username)
-		self.setPlaceholderText("Username")
+		self.setText(Tables.giggletech.ip)
+		self.setPlaceholderText("Device IP")
 		self.setFixedSize(150, 25)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -45,8 +46,11 @@ class Window_ParametersControl_ShockerUsernameField(QLineEdit, RFT_Object):
 		if (not t):
 			t = None
 
-		# Set username
-		Tables.shocker.username = t
+		# Set ip in tables
+		Tables.giggletech.ip = t
+
+		# Set ip in client
+		GiggleTech.client._address = t
 
 		self.setText(t)
 

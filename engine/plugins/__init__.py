@@ -1,5 +1,7 @@
 from engine.require import *
 
+from .base import *
+
 
 
 
@@ -18,37 +20,36 @@ class Plugins(RFT_Object):
 	plugins = RFT_Structure({
 		disabled: None
 	})
+
+	groups = []
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 	# ~~~~~~~~~ Load Plugins ~~~~~~~~~
-	for k, v in Plugins_Ext.items():
-		if (hasattr(v, "Plugin")):
-			# Get plugin class
-			p = v.Plugin
+	@classmethod
+	def loadPlugins(cls):
+		for k, v in Plugins_Ext.items():
+			if (hasattr(v, "Plugin")):
+				# Get plugin class
+				p = v.Plugin
 
 
-			if (hasattr(p, "init")):
-				# Get init function
-				i = p.init
-
-				if (callable(i)):
-					# Call init function
+				if (issubclass(p, Plugins_Base)):
 					try:
-						i()
+						cls.groups.append(len(cls.plugins))
+
+						p.init(p)
+					
+						# Iterate through entries
+						for k_, v_ in p.entries.items():
+							s = RFT_Structure(v_)
+							s.inst = p
+
+							cls.plugins[k_] = s
+					
 					except:
-						...
-
-
-			if (hasattr(p, "entries")):
-				# Get plugin entries
-				e = p.entries
-
-				if (isinstance(e, (dict, RFT_Structure))):
-					# Iterate through entries
-					for k_, v_ in e.items():
-						plugins[k + " " + k_] = RFT_Structure(v_)
+						print(traceback.format_exc())
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

@@ -26,7 +26,7 @@ class Window(QMainWindow, RFT_Object):
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
 		self.setWindowIcon(Icons.icon)
-		self.setWindowTitle(Tables.window.title)
+		self.setWindowTitle(Data.qt.window.title)
 
 		self.setWindowFlags(
 			self.windowFlags() & ~Qt.WindowType.WindowMinimizeButtonHint & ~Qt.WindowType.WindowMaximizeButtonHint

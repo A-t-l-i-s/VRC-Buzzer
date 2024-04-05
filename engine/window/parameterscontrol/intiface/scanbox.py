@@ -23,7 +23,7 @@ class Window_ParametersControl_ScanBox(QCheckBox, RFT_Object):
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
 		self.setText(None)
 		self.setFixedWidth(17)
-		self.setChecked(Data.intiface.scanning)
+		self.setChecked(Data.plugins.intiface.scanning)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -41,7 +41,10 @@ class Window_ParametersControl_ScanBox(QCheckBox, RFT_Object):
 
 	def _toggled(self, checked):
 		# Set enabled/disabled
-		Data.intiface.scanning = checked
+		Data.plugins.intiface.scanning = checked
+
+		Data.console.intiface.enabled = f"Intiface Enabled: {checked}"
+
 
 
 

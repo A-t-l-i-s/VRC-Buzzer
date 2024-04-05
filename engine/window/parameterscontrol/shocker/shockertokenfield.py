@@ -41,7 +41,9 @@ class Window_ParametersControl_ShockerTokenField(QLineEdit, RFT_Object):
 
 	def _editingFinished(self):
 		t = self.text()
-		t = t.strip()
+		
+		if (not t):
+			t = None
 
 		# Set username
 		Tables.shocker.token = t

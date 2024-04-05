@@ -72,11 +72,76 @@ class Intiface(RFT_Object):
 
 
 	@classmethod
-	async def startScan(cls):
-		if (cls.client):
-			await cls.client.start_scanning()
+	async def run(cls):
+		# ~~~~~~~~~~~ Intiface ~~~~~~~~~~~
+		await cls.start()
+		await cls.connect()
 
-	@classmethod
-	async def stopScan(cls):
-		if (cls.client):
-			await cls.client.stop_scanning()
+		await asyncio.sleep(0.1)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		# ~~~~~~~~~~~~~ Loop ~~~~~~~~~~~~~
+		scan = False
+
+		while not Data.qt.app.exiting:
+			if (Data.plugins.intiface.scanning):
+				if (not scan):
+					await cls.client.start_scanning()
+					await asyncio.sleep(0.1)
+					scan = True
+
+			else:
+				if (scan):
+					# Stop scanning
+					await cls.client.stop_scanning()
+					await asyncio.sleep(0.1)
+
+					# Stop application
+					await cls.stop()
+					await asyncio.sleep(0.1)
+
+					# Restart application
+					await cls.start()
+					await cls.connect()
+					await asyncio.sleep(0.1)
+
+					scan = False
+
+
+
+			config = Data.plugins.intiface
+			level = config.level
+
+			for k, v in cls.client.devices.items():
+				for a in v.actuators:
+					if (config.enabled):
+						# Validate level
+						l = max(
+							min(level, 1.0),
+							0.0
+						)
+
+					else:
+						# No level
+						l = 0.0
+
+
+					try:
+						# Send command
+						await a.command(l)
+					except:
+						...
+
+			
+			await asyncio.sleep(0.01)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		# ~~~~~~~~~~~ Finishing ~~~~~~~~~~
+		# Disconnect and stop intiface
+		await cls.stop()
+		await asyncio.sleep(0.1)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

@@ -13,22 +13,14 @@ __all__ = ("Plugin",)
 
 class Plugin(Plugins_Base):
 	def init(cls):
-		cls.config = Data.plugins.intiface
+		cls.config = Data.plugins.giggletech
 
-		Data.console.allocate("intiface")
+		Data.console.allocate("giggletech")
 
 
 
 	def enabled(cls, path, value):
 		cls.config.enabled = bool(value)
-		
-		# Update console values
-		cls.updateConsole()
-
-
-
-	def scanning(cls, path, value):
-		cls.config.scanning = bool(value)
 		
 		# Update console values
 		cls.updateConsole()
@@ -46,23 +38,18 @@ class Plugin(Plugins_Base):
 
 	@classmethod
 	def updateConsole(cls):
-		Data.console.intiface.enabled = f"Intiface Enabled: {cls.config.enabled}"
-		Data.console.intiface.scanning = f"Intiface Scanning: {cls.config.scanning}"
-		Data.console.intiface.level = f"Intiface Level: {cls.config.level * 100:.2f}%"
+		Data.console.giggletech.enabled = f"GiggleTech Enabled: {cls.config.enabled}"
+		Data.console.giggletech.level = f"GiggleTech Level: {cls.config.level * 100:.2f}%"
 
 
 
 
 	entries = {
-		"intiface enabled": {
+		"giggletech enabled": {
 			"callback": enabled
 		},
 
-		"intiface scanning": {
-			"callback": scanning
-		},
-
-		"intiface level": {
+		"giggletech level": {
 			"callback": level
 		}
 	}

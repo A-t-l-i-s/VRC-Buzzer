@@ -37,6 +37,14 @@ class Window_ParametersItem_ParameterPath(QLineEdit, RFT_Object):
 
 
 	def _textChanged(self, event):
-		self.parent.param.path = self.text()
+		t = self.text()
+		t = t.strip()
+
+		if (not t):
+			t = None
+
+		self.parent.param.path = t
+
+		self.setText(t)
 
 

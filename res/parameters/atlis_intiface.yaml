@@ -6,6 +6,12 @@ atlis_initiface_enabled:
   enabled: false
   components: {}
 
+atlis_initiface_scanning:
+  path: "/avatar/parameters/OSC/Intiface/Scanning"
+  plugin: "intiface scanning"
+  enabled: false
+  components: {}
+
 atlis_initiface_boop:
   path: "/avatar/parameters/Boop"
   plugin: "intiface level"

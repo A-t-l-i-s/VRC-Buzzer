@@ -88,7 +88,7 @@ class Window_ParametersControl_Intiface(QFrame, RFT_Object):
 	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
 	def _timeout(self):
 		# Set scan box checked if scanning
-		v = Data.intiface.scanning
+		v = Data.plugins.intiface.scanning
 		if (self.scanBox.isChecked() != v):
 			self.scanBox.setChecked(v)
 

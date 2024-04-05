@@ -55,19 +55,12 @@ class Window_ParametersItem_PluginsBox(QComboBox, RFT_Object):
 
 
 	def reload(self):
-		prev = None
-
 		# Add plugin ids to combobox
-		for k, v in Plugins.plugins.items():
+		for i, (k, v) in enumerate(Plugins.plugins.items()):
 			self.addItem(k)
 
-
-			p = k.split(" ")[0]
-
-			if (p != prev and prev != None):
+			if (i in Plugins.groups):
 				self.insertSeparator(self.count() - 1)
-
-			prev = p
 
 
 

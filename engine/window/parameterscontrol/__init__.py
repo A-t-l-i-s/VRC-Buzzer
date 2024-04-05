@@ -1,8 +1,10 @@
 from engine.require import *
 from engine.intiface import *
 
+from .console import *
 from .shocker import *
 from .intiface import *
+from .giggletech import *
 from .parameters import *
 
 
@@ -84,5 +86,17 @@ class Window_ParametersControl(QFrame, RFT_Object):
 		# ~~~~~~~~~~~ Intiface ~~~~~~~~~~~
 		self.intifaceWidget = Window_ParametersControl_Intiface(self)
 		self.layout.addWidget(self.intifaceWidget)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		# ~~~~~~~~~~ GiggleTech ~~~~~~~~~~
+		self.giggleTechWidget = Window_ParametersControl_GiggleTech(self)
+		self.layout.addWidget(self.giggleTechWidget)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		# ~~~~~~~~~~~~ Console ~~~~~~~~~~~
+		self.consoleWidget = Window_ParametersControl_Console(self)
+		self.layout.addWidget(self.consoleWidget)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

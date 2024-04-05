@@ -1,70 +1,11 @@
 from engine.require import *
 from engine.window import *
+from engine.plugins import *
 from engine.shocker import *
 from engine.intiface import *
+from engine.components import *
+from engine.giggletech import *
 from engine.osc_server import *
-
-
-
-
-
-async def intiface():
-	# ~~~~~~~~~~~ Intiface ~~~~~~~~~~~
-	await Intiface.start()
-	await Intiface.connect()
-
-	await asyncio.sleep(0.1)
-	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-	# ~~~~~~~~~~~~~ Loop ~~~~~~~~~~~~~
-	scan = False
-
-	while not Data.qt.app.exiting:
-		if (Data.intiface.scanning):
-			if (not scan):
-				await Intiface.startScan()
-				scan = True
-
-		else:
-			if (scan):
-				await Intiface.stopScan()
-				scan = False
-
-
-
-		config = Data.plugins.intiface
-		level = config.level
-
-		for k, v in Intiface.client.devices.items():
-			for a in v.actuators:
-				if (config.enabled):
-					# Validate and multiply level
-					l = max(
-						min(level, 1.0),
-						0.0
-					)
-
-				else:
-					# No level
-					l = 0.0
-
-
-				try:
-					# Send command
-					await a.command(l)
-				except:
-					...
-
-		
-		await asyncio.sleep(0.01)
-	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-	# ~~~~~~~~~~~ Finishing ~~~~~~~~~~
-	# Disconnect and stop intiface
-	await Intiface.stop()
-	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -84,7 +25,7 @@ if (__name__ == "__main__"):
 	# ~~~~~~~~~~~ Intiface ~~~~~~~~~~~
 	intifaceThread = threading.Thread(
 		target = asyncio.run,
-		args = (intiface(),),
+		args = (Intiface.run(),),
 		kwargs = {},
 		daemon = False
 	)
@@ -102,13 +43,30 @@ if (__name__ == "__main__"):
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-	# ~~~~~~~~~~~~ Window ~~~~~~~~~~~~
-	# Create window
-	Data.qt.app.window = Window()
-	Data.qt.app.window.show()
+	# ~~~~~~~~~~ GiggleTech ~~~~~~~~~~
+	GiggleTech.runThread()
+	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	# Run app
-	Data.qt.app.app.exec()
+
+	# ~~~~~~~~~~~~ Plugins ~~~~~~~~~~~
+	Plugins.loadPlugins()
+	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+	# ~~~~~~~~~~~~ Window ~~~~~~~~~~~~
+	try:
+		# Create window
+		Data.qt.app.window = Window()
+		Data.qt.app.window.show()
+
+		# Run app
+		Data.qt.app.app.exec()
+	
+	except:
+		print(traceback.format_exc())
+
+
+	Data.qt.app.exiting = True
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
