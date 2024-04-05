@@ -2,6 +2,7 @@ import sys
 sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
+import io
 import shutil
 import zipfile
 import requests
@@ -15,7 +16,16 @@ from pathlib import Path
 if (__name__ == "__main__"):
 	owner = "A-t-l-i-s"
 	repo = "VRC-Buzzer"
-	outFile = Path("release.zip")
+
+	delDirs = [
+		"engine",
+		"res/data",
+		"res/fonts",
+		"res/icons",
+		"res/parameters",
+		"res/plugins",
+		"res/styles"
+	]
 
 
 	req = requests.get(
@@ -36,6 +46,8 @@ if (__name__ == "__main__"):
 	# Get assets
 	assets = data.get("assets")
 
+	fileData = io.BytesIO()
+
 	if (isinstance(assets, list)):
 		for a in assets:
 			if (a["name"] == "Windows.zip"):
@@ -43,54 +55,61 @@ if (__name__ == "__main__"):
 					r.raise_for_status()
 
 					
-					with outFile.open("wb") as f:
-						s = 0
-						
-						for c in r.iter_content(chunk_size = 0xffff):
-							s += len(c)
+					s = 0
+					
+					for c in r.iter_content(chunk_size = 0xffff):
+						s += len(c)
 
-							f.write(c)
+						fileData.write(c)
 
-							p = round((s / a["size"]) * 100, 2)
-							print(f"Downloading {p}%")
+						p = round((s / a["size"]) * 100, 2)
+						print(f"Downloading {p}%")
 
 
 
 				break
 
 
-	if (outFile.exists() and outFile.is_file()):
-		# Delete old files
-		print("Removing Old Files...")
-		shutil.rmtree("engine")
-		shutil.rmtree("res/data")
-		shutil.rmtree("res/fonts")
-		shutil.rmtree("res/icons")
-		shutil.rmtree("res/parameters")
-		shutil.rmtree("res/styles")
+
+	# Delete old files
+	for d in delDirs:
+		p = Path(d)
+
+		print(f"Deleting '{p}'")
+
+		if (p.exists()):
+			if (p.is_dir()):
+				shutil.rmtree(p)
+
+			else:
+				os.remove(p)
 
 
-		file = zipfile.ZipFile(outFile)
+	# Open buffer as zip file
+	file = zipfile.ZipFile(fileData)
 
-		for n in file.namelist():
+	# Get all files inside
+	files = file.namelist()
+	filesLen = len(files)
 
-			try:
-				file.extract(
-					n,
-					Path(".")
-				)
-				print(f"Extracted '{n}'")
-			
-			except:
-				print(f"Failed to extract '{n}'")
+	for i, n in enumerate(files):
+		p = round((i / filesLen) * 100, 2)
+		
+		try:
+			file.extract(
+				n,
+				Path(".")
+			)
+
+			print(f"Extracted {p}% '{n}'")
+		
+		except:
+			print(f"Failed to extract {p}% '{n}'")
 
 
-		# Close file
-		file.close()
-
-
-		# Delete file
-		os.remove(outFile)
+	# Close buffer files
+	file.close()
+	fileData.close()
 
 
 

@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"l",
+				"layoutH"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
 				"par",
 				"param"
 			],
@@ -40,10 +60,6 @@
 				"value"
 			],
 			[
-				"com",
-				"components"
-			],
-			[
 				"set",
 				"setPlaceholderText"
 			],
@@ -54,10 +70,6 @@
 			[
 				"en",
 				"enabled"
-			],
-			[
-				"tra",
-				"traceback"
 			],
 			[
 				"__",
@@ -174,10 +186,6 @@
 			[
 				"se",
 				"seperator"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"pro",
@@ -380,10 +388,6 @@
 				"lineL"
 			],
 			[
-				"l",
-				"lines"
-			],
-			[
 				"patt",
 				"stepPattern"
 			],
@@ -510,10 +514,6 @@
 			[
 				"step",
 				"stepPattern"
-			],
-			[
-				"value",
-				"valueGroup"
 			]
 		]
 	},
@@ -523,97 +523,31 @@
 			"file": "engine/require.py",
 			"settings":
 			{
-				"buffer_size": 3123,
+				"buffer_size": 3125,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					3,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
+					5,
 					1,
 					"toggle_comment",
 					{
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
-					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					1,
+					6,
 					1,
 					"toggle_comment",
 					{
 						"block": false
 					},
 					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACIAAAAAAAAAIgAAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					2,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					3,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAAsAAAAAAAAADQAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACIAAAAAAAAAIgAAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					8,
-					1,
-					"left_delete",
-					null,
-					"BwAAAJMHAAAAAAAAkwcAAAAAAAABAAAAL1EHAAAAAAAAUQcAAAAAAAABAAAALxAHAAAAAAAAEAcAAAAAAAABAAAAL9AGAAAAAAAA0AYAAAAAAAABAAAAL4sGAAAAAAAAiwYAAAAAAAABAAAAL0cGAAAAAAAARwYAAAAAAAABAAAALwgGAAAAAAAACAYAAAAAAAABAAAALw",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAcAAAAJBgAAAAAAAAkGAAAAAAAAAAAAAAAA8L9IBgAAAAAAAEgGAAAAAAAAAAAAAAAA8L+MBgAAAAAAAIwGAAAAAAAAAAAAAAAA8L/RBgAAAAAAANEGAAAAAAAAAAAAAAAA8L8RBwAAAAAAABEHAAAAAAAAAAAAAAAA8L9SBwAAAAAAAFIHAAAAAAAAAAAAAAAA8L+UBwAAAAAAAJQHAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"insert",
-					{
-						"characters": "-"
-					},
-					"BwAAAI0HAAAAAAAAjgcAAAAAAAAAAAAATAcAAAAAAABNBwAAAAAAAAAAAAAMBwAAAAAAAA0HAAAAAAAAAAAAAM0GAAAAAAAAzgYAAAAAAAAAAAAAiQYAAAAAAACKBgAAAAAAAAAAAABGBgAAAAAAAEcGAAAAAAAAAAAAAAgGAAAAAAAACQYAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAcAAAAIBgAAAAAAAAgGAAAAAAAAAAAAAAAA8L9GBgAAAAAAAEYGAAAAAAAAAAAAAAAA8L+JBgAAAAAAAIkGAAAAAAAAAAAAAAAA8L/NBgAAAAAAAM0GAAAAAAAAAAAAAAAA8L8MBwAAAAAAAAwHAAAAAAAAAAAAAAAA8L9MBwAAAAAAAEwHAAAAAAAAAAAAAAAA8L+NBwAAAAAAAI0HAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					15,
-					1,
-					"left_delete",
-					null,
-					"AQAAADMIAAAAAAAAMwgAAAAAAAABAAAALA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA0CAAAAAAAADQIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					22,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAAsAAAAAAAAACwAAAAAAAAACAAAAIyA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABPAAAAAAAAAE8AAAAAAAAAAAAAAAAA8L8"
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -702,42 +636,66 @@
 	},
 	"expanded_folders":
 	[
-		"/G/VRC-Buzzer"
+		"/G/VRC-Buzzer",
+		"/G/VRC-Buzzer/engine",
+		"/G/VRC-Buzzer/engine/components",
+		"/G/VRC-Buzzer/engine/intiface",
+		"/G/VRC-Buzzer/engine/shocker",
+		"/G/VRC-Buzzer/engine/window"
 	],
 	"file_history":
 	[
-		"/C/Misc/Information.yml",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/__init__.py",
+		"/G/VRC-Buzzer/res/parameters/atlis_intiface.yaml",
+		"/G/VRC-Buzzer/res/parameters/toxic.yaml",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/__init__.py",
+		"/G/VRC-Buzzer/res/plugins/shocker.py",
+		"/G/VRC-Buzzer/engine/shocker/__init__.py",
 		"/G/VRC-Buzzer/engine/window/parameterslist/item/__init__.py",
-		"/G/VRC-Buzzer/engine/window/componentslist/__init__.py",
-		"/G/VRC-Buzzer/engine/window/parameterslist/__init__.py",
-		"/C/Users/Admin/Desktop/VRC-Buzzer/engine/require.py",
-		"/C/Users/Admin/Desktop/Windows/engine/require.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/parametervalue.py",
+		"/G/VRC-Buzzer/VRC-Buzzer.py",
+		"/G/VRC-Buzzer/engine/intiface/__init__.py",
+		"/G/VRC-Buzzer/engine/components/__init__.py",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/scanbox.py",
+		"/G/VRC-Buzzer/res/styles/window/checkbox.css",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/__init__.py",
+		"/G/VRC-Buzzer/res/styles/parameters_item/plugins_box.css",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/enablebox.py",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/swapbox.py",
+		"/G/VRC-Buzzer/res/styles/parameters_control/frame.css",
+		"/G/VRC-Buzzer/engine/window/parameterslist/item/pluginsbox.py",
+		"/G/VRC-Buzzer/res/styles/components_item/components_box.css",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsbox.py",
 		"/G/VRC-Buzzer/engine/require.py",
+		"/G/VRC-Buzzer/res/styles/window/button.css",
+		"/G/VRC-Buzzer/res/styles/parameters_control/main.css",
+		"/G/VRC-Buzzer/res/styles/window/main.css",
+		"/G/VRC-Buzzer/res/styles/parameters_control/title.css",
+		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/__init__.py",
+		"/G/VRC-Buzzer/res/plugins/intiface.py",
+		"/G/VRC-Buzzer/engine/window/parameterslist/__init__.py",
+		"/G/VRC-Buzzer/res/styles/parameters_control/device_list.css",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/newbutton.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/deleteallbutton.py",
+		"/G/VRC-Buzzer/res/parameters/atlis_shocker.yaml",
+		"/G/VRC-Buzzer/engine/window/componentslist/__init__.py",
+		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsvalue.py",
+		"/C/Misc/Information.yml",
+		"/C/Users/Admin/Desktop/VRC-Buzzer/engine/require.py",
+		"/C/Users/Admin/Desktop/Windows/engine/require.py",
 		"/G/VRC-Buzzer/manifest-build.ryp",
 		"/G/Rypple/rypile.py",
-		"/G/VRC-Buzzer/res/parameters/atlis_intiface.yaml",
-		"/G/VRC-Buzzer/res/parameters/atlis_shocker.yaml",
-		"/G/VRC-Buzzer/engine/window/componentslist/item/__init__.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/__init__.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/deletebutton.py",
 		"/G/VRC-Buzzer/engine/plugins/__init__.py",
-		"/G/VRC-Buzzer/engine/components/__init__.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/disableallbutton.py",
-		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsbox.py",
-		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsvalue.py",
 		"/G/VRC-Buzzer/engine/components/var.py",
 		"/G/VRC-Buzzer/engine/components/bitwise.py",
-		"/G/VRC-Buzzer/engine/window/parameterslist/item/parametervalue.py",
 		"/G/VRC-Buzzer/res/tables/parameters.table",
-		"/G/VRC-Buzzer/engine/window/componentslist/item/swapbox.py",
 		"/G/VRC-Buzzer/res/styles/components_item/swap_box.css",
 		"/G/VRC-Buzzer/res/styles/parameters_item/main_selected.css",
 		"/G/VRC-Buzzer/res/styles/components_item/main.css",
 		"/G/VRC-Buzzer/res/styles/components_item/main_selected.css",
-		"/G/VRC-Buzzer/engine/window/parameterslist/item/pluginsbox.py",
-		"/G/VRC-Buzzer/engine/window/parameterslist/item/enablebox.py",
 		"/G/VRC-Buzzer/engine/components/round.py",
 		"/G/VRC-Buzzer/engine/components/math.py",
 		"/G/VRC-Buzzer/engine/components/floor.py",
@@ -759,19 +717,13 @@
 		"/G/VRC-Buzzer/res/components/mul.py",
 		"/G/VRC-Buzzer/engine/window/parameterslist/item/parameterpath.py",
 		"/G/VRC-Buzzer/engine/window/__init__.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/__init__.py",
 		"/G/VRC-Buzzer/engine/window/componentslist/item/componentsconstant.py",
 		"/G/FinalsDragon/config/site.conf",
 		"/G/FinalsDragon/config/service.conf",
 		"/G/FinalsDragon/config/ports.conf",
 		"/D/SteamLibrary/steamapps/common/Terraria/serverconfig.txt",
 		"/G/VRC-Buzzer/res/styles/components_list/main.css",
-		"/G/VRC-Buzzer/VRC-Buzzer.py",
-		"/G/VRC-Buzzer/engine/shocker/__init__.py",
 		"/G/VRC-OSC/res/styles/system_tray/main.css",
-		"/G/VRC-Buzzer/res/styles/parameters_item/plugins_box.css",
-		"/G/VRC-Buzzer/res/plugins/shocker.py",
-		"/G/VRC-Buzzer/res/plugins/intiface.py",
 		"/G/VRC-Buzzer/res/data/plugins/shocker.yaml",
 		"/G/VRC-Buzzer/res/data/plugins/intiface.yaml",
 		"/G/VRC-Buzzer/engine/plugins/base.py",
@@ -784,15 +736,11 @@
 		"/G/VRC-Buzzer/res/data/qt/window.yaml",
 		"/G/VRC-Buzzer/res/tables/window.table",
 		"/G/VRC-Buzzer/res/styles/parameters_list/main.css",
-		"/G/VRC-Buzzer/res/styles/parameters_control/main.css",
 		"/G/VRC-Buzzer/engine/window/components/__init__.py",
 		"/G/VRC-Buzzer/manifest.ryp",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/components/__init__.py",
 		"/G/VRC-Buzzer/VRC-Buzzer-Updater.py",
-		"/G/VRC-Buzzer/res/styles/parameters_control/frame.css",
 		"/G/VRC-Buzzer/res/styles/parameters_control/seperator.css",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/__init__.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/__init__.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/parameters/importparametersbutton.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/intiface/scanbutton.py",
 		"/G/VRC-Buzzer/engine/window/parameterscontrol/shocker/shockerusernamefield.py",
@@ -824,16 +772,7 @@
 		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanDown.anim",
 		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanDownWait.anim",
 		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanOn.anim",
-		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanOff.anim",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/scanbutton.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/deletebutton.py",
-		"/G/VRC-Buzzer/engine/intiface/__init__.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/shockercodefield.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/shockertokenfield.py",
-		"/G/VRC-Buzzer/engine/window/parameterscontrol/disableallbutton.py",
-		"/G/VRC-Buzzer/output.log",
-		"/I/engine/require.py",
-		"/I/wyvern.cpp"
+		"/G/AtlisAvatars/Assets/XevianAssets/XevianGroanTube/Animations/GroanOff.anim"
 	],
 	"find":
 	{
@@ -1075,15 +1014,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3123,
+						"buffer_size": 3125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1369,
-								1369
+								187,
+								187
 							]
 						],
 						"settings":
@@ -1111,41 +1050,21 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1160,7 +1079,27 @@
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
