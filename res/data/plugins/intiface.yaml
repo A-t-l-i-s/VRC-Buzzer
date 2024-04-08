@@ -2,5 +2,6 @@
 
 enabled: False
 level: 0
+increment: 0.03
 scanning: False
 

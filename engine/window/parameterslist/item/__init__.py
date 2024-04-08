@@ -69,7 +69,6 @@ class Window_ParametersItem(QFrame, RFT_Object):
 
 		# ~~~~~~~~~~~~ Plugins ~~~~~~~~~~~
 		self.pluginsBox = Window_ParametersItem_PluginsBox(self)
-		self.pluginsBox.reload()
 		self.layout.addWidget(self.pluginsBox)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -78,6 +77,9 @@ class Window_ParametersItem(QFrame, RFT_Object):
 		self.enableBox = Window_ParametersItem_EnableBox(self)
 		self.layout.addWidget(self.enableBox)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		self.pluginsBox.reload()
 
 
 
@@ -94,8 +96,11 @@ class Window_ParametersItem(QFrame, RFT_Object):
 			# Set new selected
 			self.parent.selected = self
 
-			# Enable the delete button
-			self.parent.parent.parametersControl.parametersWidget.deleteButton.setEnabled(True)
+			# Enable the buttons
+			param = self.parent.parent.parametersControl.parametersWidget
+			param.upButton.setEnabled(True)
+			param.downButton.setEnabled(True)
+			param.deleteButton.setEnabled(True)
 
 
 			# Unselect components
@@ -103,6 +108,18 @@ class Window_ParametersItem(QFrame, RFT_Object):
 	
 			# Reload components
 			self.parent.parent.componentsList.reload()
+
+
+		elif (event.button() == Qt.MouseButton.RightButton):
+			if (self.param.plugin == Plugins.seperator):
+				# Set plugin to disabled
+				self.param.plugin = None
+
+				# Update visibility
+				self.update()
+
+				# Reload plugins box
+				self.pluginsBox.reload()
 
 
 
@@ -141,6 +158,15 @@ class Window_ParametersItem(QFrame, RFT_Object):
 			)
 
 			self.handlePath = path
+
+
+		# Set seperator
+		e = (self.param.plugin != Plugins.seperator)
+
+		self.parameterPath.setVisible(e)
+		self.parameterValue.setVisible(e)
+		self.pluginsBox.setVisible(e)
+		self.enableBox.setVisible(e)
 
 
 
@@ -189,7 +215,7 @@ class Window_ParametersItem(QFrame, RFT_Object):
 				strValue = f"{value}"
 
 			elif (isinstance(value, (int, float))):
-				strValue = f"{round(value, 2)}"
+				strValue = f"{round(value, 3)}"
 
 			else:
 				strValue = "None"

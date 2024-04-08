@@ -16,15 +16,10 @@ class Plugin(Plugins_Base):
 	def init(cls):
 		cls.config = Data.plugins.shocker
 
-		Data.console.allocate("shocker")
-
 
 
 	def enabled(cls, path, value):
 		cls.config.enabled = bool(value)
-
-		# Update console values
-		cls.updateConsole()
 
 
 
@@ -41,9 +36,6 @@ class Plugin(Plugins_Base):
 				cls.config.level = 0
 				cls.config.levelDefault = 0
 
-		# Update console values
-		cls.updateConsole()
-
 
 
 	def duration(cls, path, value):
@@ -58,9 +50,6 @@ class Plugin(Plugins_Base):
 			else:
 				cls.config.duration = 0
 				cls.config.durationDefault = 0
-
-		# Update console values
-		cls.updateConsole()
 
 
 
@@ -91,9 +80,6 @@ class Plugin(Plugins_Base):
 					cls.config.sinceBoop = t
 					cls.config.sinceReset = t
 
-		# Update console values
-		cls.updateConsole()
-
 
 
 	def reward(cls, path, value):
@@ -115,17 +101,6 @@ class Plugin(Plugins_Base):
 					# Time since last headpat
 					cls.config.sinceHeadpat = t
 					cls.config.sinceReset = t
-
-		# Update console values
-		cls.updateConsole()
-
-
-
-	@classmethod
-	def updateConsole(cls):
-		Data.console.shocker.enabled = f"Shocker Enabled: {cls.config.enabled}"
-		Data.console.shocker.level = f"Shocker Level: {cls.config.level * 100:.2f}%"
-		Data.console.shocker.duration = f"Shocker Duration: {cls.config.duration:.2f}s"
 
 
 

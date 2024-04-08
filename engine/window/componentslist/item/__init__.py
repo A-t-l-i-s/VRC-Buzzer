@@ -83,8 +83,11 @@ class Window_ComponentsItem(QFrame, RFT_Object):
 			# Set new selected
 			self.parent.selected = self
 
-			# Enable the delete button
-			self.parent.parent.parametersControl.parametersWidget.deleteButton.setEnabled(True)
+			# Enable the buttons
+			param = self.parent.parent.parametersControl.parametersWidget
+			param.upButton.setEnabled(True)
+			param.downButton.setEnabled(True)
+			param.deleteButton.setEnabled(True)
 
 
 

@@ -46,6 +46,8 @@ class Window_ParametersItem_PluginsBox(QComboBox, RFT_Object):
 
 		self.parent.param.plugin = text
 
+		self.parent.update()
+
 
 
 	def wheelEvent(self, event):
@@ -72,6 +74,8 @@ class Window_ParametersItem_PluginsBox(QComboBox, RFT_Object):
 
 		else:
 			self.setCurrentText(Plugins.disabled)
+
+
 
 
 

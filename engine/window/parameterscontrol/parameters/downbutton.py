@@ -4,13 +4,13 @@ from engine.require import *
 
 
 
-__all__ = ("Window_ParametersControl_DeleteButton",)
+__all__ = ("Window_ParametersControl_DownButton",)
 
 
 
 
 
-class Window_ParametersControl_DeleteButton(QPushButton, RFT_Object):
+class Window_ParametersControl_DownButton(QPushButton, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 
@@ -21,7 +21,7 @@ class Window_ParametersControl_DeleteButton(QPushButton, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setText("Delete")
+		self.setText("Move Down")
 		self.setFixedSize(150, 25)
 		self.setCursor(Qt.CursorShape.PointingHandCursor)
 		self.setEnabled(False)
@@ -53,36 +53,26 @@ class Window_ParametersControl_DeleteButton(QPushButton, RFT_Object):
 			com = pls.param.components
 
 			if (len(com) > 1):
-				# If component exists then delete it
-				if (com.contains(clse.uid)):
-					com.pop(clse.uid)
-
-			# Unselect components
-			cl.selected = None
+				self.parent.parent.parent.moveData(
+					com,
+					clse.uid,
+					1
+				)
 
 
 		elif (pls):
-			# Disable param before deletion
-			pls.param.enabled = False
-			pls.update()
-
-			# Delete parameter
-			Tables.parameters.pop(pls.uid)
-
-			# Unselect plugin
-			pl.selected = None
+			if (len(Tables.parameters) > 1):
+				self.parent.parent.parent.moveData(
+					Tables.parameters,
+					pls.uid,
+					1
+				)
 
 
 
 		# Reload lists
 		pl.reload()
 		cl.reload()
-
-
-		# Disable the buttons
-		self.setEnabled(False)
-		self.parent.upButton.setEnabled(False)
-		self.parent.downButton.setEnabled(False)
 
 
 

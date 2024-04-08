@@ -21,8 +21,8 @@ class Window_ParametersControl_Console(QFrame, RFT_Object):
 
 
 		# ~~~~~~~~~~~~ Options ~~~~~~~~~~~
-		self.setEnabled(True)
-		self.setVisible(True)
+		self.setEnabled(False)
+		self.setVisible(False)
 
 		self.setFixedWidth(150)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,26 +69,7 @@ class Window_ParametersControl_Console(QFrame, RFT_Object):
 
 	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
 	def _timeout(self):
-		# Create text for widget
-		t = ""
-		
-		for k, v in Data.console.items():
-			if (isinstance(v, RFT_Structure)):
-				for k_, v_ in v.items():
-					t += f"{v_}\n"
-
-			else:
-				t += f"{v_}\n"
-
-			t += "\n"
-
-
-
-		# Clean up text
-		t = t.strip()
-
-		# Add text to widget
-		self.console.setText(t)
+		...
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

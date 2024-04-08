@@ -1,10 +1,18 @@
 
 
+atlis_initiface_seperator:
+  path: null
+  plugin: "seperator"
+  enabled: false
+  components: {}
+
+
 atlis_initiface_enabled:
   path: "/avatar/parameters/OSC/Intiface/Enabled"
   plugin: "intiface enabled"
   enabled: false
   components: {}
+
 
 atlis_initiface_scanning:
   path: "/avatar/parameters/OSC/Intiface/Scanning"
@@ -12,17 +20,6 @@ atlis_initiface_scanning:
   enabled: false
   components: {}
 
-atlis_initiface_boop:
-  path: "/avatar/parameters/Boop"
-  plugin: "intiface level"
-  enabled: false
-  components: {
-    "mult": {
-      "component": "mul",
-      "value": 1,
-      "swap": False
-    }
-  }
 
 atlis_initiface_headpat:
   path: "/avatar/parameters/HeadPat"
@@ -31,10 +28,11 @@ atlis_initiface_headpat:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.2,
       "swap": False
     }
   }
+
 
 atlis_initiface_leftcheek:
   path: "/avatar/parameters/LeftCheek"
@@ -43,10 +41,11 @@ atlis_initiface_leftcheek:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.1,
       "swap": False
     }
   }
+
 
 atlis_initiface_rightcheek:
   path: "/avatar/parameters/RightCheek"
@@ -55,10 +54,11 @@ atlis_initiface_rightcheek:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.1,
       "swap": False
     }
   }
+
 
 atlis_initiface_chin:
   path: "/avatar/parameters/Chin"
@@ -67,10 +67,11 @@ atlis_initiface_chin:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.01,
       "swap": False
     }
   }
+
 
 atlis_initiface_forehead:
   path: "/avatar/parameters/Forehead"
@@ -79,10 +80,11 @@ atlis_initiface_forehead:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.01,
       "swap": False
     }
   }
+
 
 atlis_initiface_belly:
   path: "/avatar/parameters/Belly"
@@ -91,10 +93,11 @@ atlis_initiface_belly:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.2,
       "swap": False
     }
   }
+
 
 atlis_initiface_crotch:
   path: "/avatar/parameters/Crotch"
@@ -103,34 +106,11 @@ atlis_initiface_crotch:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.4,
       "swap": False
     }
   }
 
-atlis_initiface_leftbean:
-  path: "/avatar/parameters/Dynamics_LeftBean_Stretch"
-  plugin: "intiface level"
-  enabled: false
-  components: {
-    "mult": {
-      "component": "mul",
-      "value": 1,
-      "swap": False
-    }
-  }
-
-atlis_initiface_rightbean:
-  path: "/avatar/parameters/Dynamics_RightBean_Stretch"
-  plugin: "intiface level"
-  enabled: false
-  components: {
-    "mult": {
-      "component": "mul",
-      "value": 1,
-      "swap": False
-    }
-  }
 
 atlis_initiface_tail:
   path: "/avatar/parameters/Dynamics_Tail_Stretch"
@@ -139,10 +119,11 @@ atlis_initiface_tail:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.1,
       "swap": False
     }
   }
+
 
 atlis_initiface_leash:
   path: "/avatar/parameters/Dynamics_Leash_Stretch"
@@ -151,7 +132,7 @@ atlis_initiface_leash:
   components: {
     "mult": {
       "component": "mul",
-      "value": 1,
+      "value": 0.1,
       "swap": False
     }
   }

@@ -1,15 +1,25 @@
 
+
+toxic_initiface_seperator:
+  path: null
+  plugin: "seperator"
+  enabled: false
+  components: {}
+
+
 toxic_initiface_enabled:
   path: "/avatar/parameters/Enable_Tail"
   plugin: "intiface enabled"
   enabled: false
   components: {}
 
+
 toxic_initiface_scanning:
   path: null
   plugin: "intiface scanning"
   enabled: false
   components: {}
+
 
 toxic_initiface_tail:
   path: "/avatar/parameters/Tail/_Stretch"
@@ -22,3 +32,5 @@ toxic_initiface_tail:
       "swap": False
     }
   }
+
+

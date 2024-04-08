@@ -91,8 +91,11 @@ class Window_ParametersList(QFrame, RFT_Object):
 	def reload(self):
 		self.clear()
 
-		# Disable delete button
-		self.parent.parametersControl.parametersWidget.deleteButton.setEnabled(False)
+		# Enable the buttons
+		param = self.parent.parametersControl.parametersWidget
+		param.upButton.setEnabled(False)
+		param.downButton.setEnabled(False)
+		param.deleteButton.setEnabled(False)
 
 
 		# If previous selected exists then get uid
@@ -116,8 +119,10 @@ class Window_ParametersList(QFrame, RFT_Object):
 				# Set to selected stylesheet
 				w.setStyleSheet(Styles.parameters_item.main_selected)
 
-				# Enable delete button
-				self.parent.parametersControl.parametersWidget.deleteButton.setEnabled(True)
+				# Enable the buttons
+				param.upButton.setEnabled(True)
+				param.downButton.setEnabled(True)
+				param.deleteButton.setEnabled(True)
 
 
 			# Add item to layout

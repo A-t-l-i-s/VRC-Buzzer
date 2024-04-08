@@ -139,6 +139,20 @@ class Window(QMainWindow, RFT_Object):
 
 
 	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
+	def moveData(self, data, uid, amt):
+		itm = list(data.keys())
+		i = itm.index(uid)
+
+		if ((i > 0 and amt < 0) or amt > 0):
+			itm.pop(i)
+			itm.insert(i + amt, uid)
+
+			for k in itm:
+				v = data.pop(k)
+				data[k] = v
+
+
+
 	def exit(self):
 		# Exit app
 		Data.qt.app.app.quit()

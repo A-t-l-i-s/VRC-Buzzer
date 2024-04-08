@@ -15,10 +15,12 @@ __all__ = ("Plugins",)
 class Plugins(RFT_Object):
 	# ~~~~~~~~ Default Plugins ~~~~~~~
 	disabled = "disabled"
+	seperator = "seperator"
 
 
 	plugins = RFT_Structure({
-		disabled: None
+		disabled: None,
+		seperator: None
 	})
 
 	groups = []

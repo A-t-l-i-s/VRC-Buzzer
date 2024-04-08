@@ -1,7 +1,9 @@
 from engine.require import *
 from engine.plugins import *
 
+from .upbutton import *
 from .newbutton import *
+from .downbutton import *
 from .deletebutton import *
 from .deleteallbutton import *
 from .enableallbutton import *
@@ -63,6 +65,14 @@ class Window_ParametersControl_Parameter(QFrame, RFT_Object):
 		# Delete all parameters/components
 		self.deleteAllButton = Window_ParametersControl_DeleteAllButton(self)
 		self.layout.addWidget(self.deleteAllButton)
+
+		# Move up parameters/components
+		self.upButton = Window_ParametersControl_UpButton(self)
+		self.layout.addWidget(self.upButton)
+
+		# Move down parameters/components
+		self.downButton = Window_ParametersControl_DownButton(self)
+		self.layout.addWidget(self.downButton)
 
 
 

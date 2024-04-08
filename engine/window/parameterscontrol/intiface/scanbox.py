@@ -43,8 +43,6 @@ class Window_ParametersControl_ScanBox(QCheckBox, RFT_Object):
 		# Set enabled/disabled
 		Data.plugins.intiface.scanning = checked
 
-		Data.console.intiface.enabled = f"Intiface Enabled: {checked}"
-
 
 
 

@@ -15,23 +15,15 @@ class Plugin(Plugins_Base):
 	def init(cls):
 		cls.config = Data.plugins.intiface
 
-		Data.console.allocate("intiface")
-
 
 
 	def enabled(cls, path, value):
 		cls.config.enabled = bool(value)
-		
-		# Update console values
-		cls.updateConsole()
 
 
 
 	def scanning(cls, path, value):
 		cls.config.scanning = bool(value)
-		
-		# Update console values
-		cls.updateConsole()
 
 
 
@@ -39,16 +31,10 @@ class Plugin(Plugins_Base):
 		if (isinstance(value, (int, float, bool))):
 			cls.config.level = float(value)
 
-		# Update console values
-		cls.updateConsole()
 
-
-
-	@classmethod
-	def updateConsole(cls):
-		Data.console.intiface.enabled = f"Intiface Enabled: {cls.config.enabled}"
-		Data.console.intiface.scanning = f"Intiface Scanning: {cls.config.scanning}"
-		Data.console.intiface.level = f"Intiface Level: {cls.config.level * 100:.2f}%"
+	def increment(cls, path, value):
+		if (isinstance(value, (int, float, bool))):
+			cls.config.increment = float(value)
 
 
 
@@ -64,6 +50,10 @@ class Plugin(Plugins_Base):
 
 		"intiface level": {
 			"callback": level
+		},
+
+		"intiface increment": {
+			"callback": increment
 		}
 	}
 

@@ -83,6 +83,9 @@ class Intiface(RFT_Object):
 
 		# ~~~~~~~~~~~~~ Loop ~~~~~~~~~~~~~
 		scan = False
+		level = 0
+		incr = 0.03
+		i = 0
 
 		while not Data.qt.app.exiting:
 			if (Data.plugins.intiface.scanning):
@@ -111,14 +114,13 @@ class Intiface(RFT_Object):
 
 
 			config = Data.plugins.intiface
-			level = config.level
 
 			for k, v in cls.client.devices.items():
 				for a in v.actuators:
 					if (config.enabled):
 						# Validate level
 						l = max(
-							min(level, 1.0),
+							min(config.level, 1.0),
 							0.0
 						)
 
@@ -127,9 +129,24 @@ class Intiface(RFT_Object):
 						l = 0.0
 
 
+					# Increment or decrement level
+					if (l > level):
+						level += config.increment
+
+					elif (l < level):
+						level -= config.increment
+
+
+					# Validate sent level
+					level = max(
+						min(level, 1.0),
+						0.0
+					)
+
+
 					try:
 						# Send command
-						await a.command(l)
+						await a.command(level)
 					except:
 						...
 

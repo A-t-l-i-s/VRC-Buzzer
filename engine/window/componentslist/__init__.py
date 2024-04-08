@@ -88,35 +88,39 @@ class Window_ComponentsList(QFrame, RFT_Object):
 
 
 		if (sel):
-			com = sel.param.components
+			if (sel.param.plugin not in (Plugins.disabled, Plugins.seperator, None)):
+				com = sel.param.components
 
-			if (len(com) == 0):
-				uid = Plugins.newUID()
+				if (len(com) == 0):
+					uid = Plugins.newUID()
 
-				com[uid] = RFT_Structure({
-					"component": None,
-					"value": None,
-					"swap": False
-				})
-
-
-			for k, v in com.items():
-				# Create new item
-				w = Window_ComponentsItem(self, k, v)
+					com[uid] = RFT_Structure({
+						"component": None,
+						"value": None,
+						"swap": False
+					})
 
 
-				# If id has already been selected
-				if (selC != None and k == selC.uid):
-					self.selected = w
-
-					# Set to selected stylesheet
-					w.setStyleSheet(Styles.components_item.main_selected)
-
-					# Enable delete button
-					self.parent.parametersControl.parametersWidget.deleteButton.setEnabled(True)
+				for k, v in com.items():
+					# Create new item
+					w = Window_ComponentsItem(self, k, v)
 
 
-				# Add item to layout
-				self.layout.addWidget(w)
+					# If id has already been selected
+					if (selC != None and k == selC.uid):
+						self.selected = w
+
+						# Set to selected stylesheet
+						w.setStyleSheet(Styles.components_item.main_selected)
+
+						# Enable the buttons
+						param = self.parent.parametersControl.parametersWidget
+						param.upButton.setEnabled(True)
+						param.downButton.setEnabled(True)
+						param.deleteButton.setEnabled(True)
+
+
+					# Add item to layout
+					self.layout.addWidget(w)
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
