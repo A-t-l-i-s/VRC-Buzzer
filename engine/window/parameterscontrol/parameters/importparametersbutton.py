@@ -1,4 +1,5 @@
 from engine.require import *
+from engine.plugins import *
 
 
 
@@ -76,7 +77,7 @@ class Window_ParametersControl_ImportParametersButton(QPushButton, RFT_Object):
 
 				for k, v in d_.items():
 					# If contains correct keys
-					if (v.contains(("path", "plugin", "enabled"))):
+					if (v.contains(("path", "plugin", "enabled", "components"))):
 						# If parameter doesn't exist
 						if (not Tables.parameters.contains(k)):
 							Tables.parameters[k] = v

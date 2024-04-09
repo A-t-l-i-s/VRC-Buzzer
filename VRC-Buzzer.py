@@ -3,6 +3,7 @@ from engine.window import *
 from engine.plugins import *
 from engine.shocker import *
 from engine.intiface import *
+from engine.heartrate import *
 from engine.components import *
 from engine.giggletech import *
 from engine.osc_server import *
@@ -31,6 +32,15 @@ if (__name__ == "__main__"):
 	)
 
 	intifaceThread.start()
+	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+	# ~~~~~~~~~~~ HeartRate ~~~~~~~~~~
+	threading._start_new_thread(
+		asyncio.run,
+		(HeartRate.run(),),
+		{}
+	)
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -72,7 +82,7 @@ if (__name__ == "__main__"):
 
 
 	# ~~~~~~~~~~~ Finishing ~~~~~~~~~~
-	# Wait for intiface to finish
+	# Wait for intiface and heartrate to finish
 	intifaceThread.join()
 
 	# Save tables

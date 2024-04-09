@@ -1,12 +1,5 @@
 
 
-atlis_shocker_seperator:
-  path: null
-  plugin: "seperator"
-  enabled: false
-  components: {}
-
-
 atlis_shocker_enabled:
   path: "/avatar/parameters/OSC/Shocker/Enabled"
   plugin: "shocker enabled"

@@ -19,7 +19,6 @@ if (__name__ == "__main__"):
 
 	delDirs = [
 		"engine",
-		"res/data",
 		"res/fonts",
 		"res/icons",
 		"res/parameters",

@@ -1,6 +1,7 @@
 from engine.require import *
 from engine.intiface import *
 
+from .chatbox import *
 from .console import *
 from .shocker import *
 from .intiface import *
@@ -92,6 +93,12 @@ class Window_ParametersControl(QFrame, RFT_Object):
 		# ~~~~~~~~~~ GiggleTech ~~~~~~~~~~
 		self.giggleTechWidget = Window_ParametersControl_GiggleTech(self)
 		self.layout.addWidget(self.giggleTechWidget)
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+		# ~~~~~~~~~~~~ ChatBox ~~~~~~~~~~~
+		self.chatboxWidget = Window_ParametersControl_ChatBox(self)
+		self.layout.addWidget(self.chatboxWidget)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

@@ -1,5 +1,5 @@
 import sys
-# sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
+sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
 import io
@@ -13,12 +13,18 @@ import psutil
 import random
 import asyncio
 import zipfile
+import datetime
 import requests
 import traceback
 import threading
 import subprocess
 
 from pathlib import Path
+
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+from bleak import BleakClient, BleakScanner
 
 from buttplug import (
 	Client as Intiface_Client,
@@ -34,7 +40,8 @@ from PyQt6.QtGui import (
 	QFontDatabase, QFontMetrics, QAction,
 	QImage, QPixmap, QIcon,
 	QPainter, QColor, QPen,
-	QBrush, QMouseEvent, QCursor
+	QBrush, QMouseEvent, QCursor,
+	QFont
 )
 
 from PyQt6.QtCore import (
@@ -142,7 +149,10 @@ Tables = Tables_Obj.data
 Tables.window.default( # Allocate window table
 	{
 		"width": Data.qt.window.width,
-		"height": Data.qt.window.height
+		"height": Data.qt.window.height,
+
+		"x": 0,
+		"y": 0
 	}
 )
 
@@ -161,6 +171,15 @@ Tables.shocker.default( # Allocate shocker table
 Tables.giggletech.default( # Allocate giggletech table
 	{
 		"ip": None
+	}
+)
+
+Tables.chatbox.default( # Allocate chatbox table
+	{
+		"enabled": False,
+		"spotify": False,
+		"timezone": False,
+		"heartrate": False
 	}
 )
 

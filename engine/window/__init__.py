@@ -20,7 +20,6 @@ class Window(QMainWindow, RFT_Object):
 
 
 		# ~~~~~~~~~~~ Variables ~~~~~~~~~~
-		self.selectedPlugin = None
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -32,7 +31,9 @@ class Window(QMainWindow, RFT_Object):
 			self.windowFlags() & ~Qt.WindowType.WindowMinimizeButtonHint & ~Qt.WindowType.WindowMaximizeButtonHint
 		)
 
-		self.resize(
+		self.setGeometry(
+			Tables.window.x,
+			Tables.window.y,
 			Tables.window.width,
 			Tables.window.height
 		)
@@ -112,6 +113,15 @@ class Window(QMainWindow, RFT_Object):
 
 		event.accept()
 
+
+
+	def moveEvent(self, event):
+		pos = event.pos()
+
+		Tables.window.x = pos.x()
+		Tables.window.y = pos.y()
+
+		event.accept()
 
 
 	def keyPressEvent(self, event):

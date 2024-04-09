@@ -1,12 +1,5 @@
 
 
-atlis_initiface_seperator:
-  path: null
-  plugin: "seperator"
-  enabled: false
-  components: {}
-
-
 atlis_initiface_enabled:
   path: "/avatar/parameters/OSC/Intiface/Enabled"
   plugin: "intiface enabled"
@@ -15,7 +8,7 @@ atlis_initiface_enabled:
 
 
 atlis_initiface_scanning:
-  path: "/avatar/parameters/OSC/Intiface/Scanning"
+  path: "/avatar/parameters/OSC/Intiface/Enabled"
   plugin: "intiface scanning"
   enabled: false
   components: {}

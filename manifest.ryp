@@ -5,8 +5,10 @@
 
 
 
+@Extension: RyPile-Python
 
 @Popout: False
-@Run: ("python.exe", "VRC-Buzzer.py")
+@File: "VRC-Buzzer.py"
+@Done
 
 
