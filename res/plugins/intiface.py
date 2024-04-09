@@ -32,11 +32,6 @@ class Plugin(Plugins_Base):
 			cls.config.level = float(value)
 
 
-	def increment(cls, path, value):
-		if (isinstance(value, (int, float, bool))):
-			cls.config.increment = float(value)
-
-
 
 
 	entries = {
@@ -50,10 +45,6 @@ class Plugin(Plugins_Base):
 
 		"intiface level": {
 			"callback": level
-		},
-
-		"intiface increment": {
-			"callback": increment
 		}
 	}
 

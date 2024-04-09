@@ -151,7 +151,7 @@ class Window_ParametersItem(QFrame, RFT_Object):
 
 
 		# Register new handle if its enabled
-		if (enabled):
+		if (enabled and self.param.plugin not in (Plugins.disabled, Plugins.seperator, None)):
 			self.handle = OSCServer.register(
 				path,
 				self.callback
