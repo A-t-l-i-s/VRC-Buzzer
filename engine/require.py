@@ -1,5 +1,5 @@
 import sys
-sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
+# sys.path = [".", "lib", "lib.zip", "bin", "bin.zip", "engine.zip"]
 
 import os
 import io
@@ -18,6 +18,7 @@ import requests
 import traceback
 import threading
 import subprocess
+import nest_asyncio
 
 from pathlib import Path
 
@@ -45,7 +46,7 @@ from PyQt6.QtGui import (
 )
 
 from PyQt6.QtCore import (
-	Qt, pyqtSlot, QSize, QEvent, QTimer
+	Qt, QObject, pyqtSlot, QSize, QEvent, QTimer
 )
 
 from PyQt6.QtWidgets import (
@@ -179,7 +180,22 @@ Tables.chatbox.default( # Allocate chatbox table
 		"enabled": False,
 		"spotify": False,
 		"timezone": False,
-		"heartrate": False
+		"heartrate": False,
+		"mute": False
+	}
+)
+
+Tables.spotify.default( # Allocate spotify table
+	{
+		"clientId": None,
+		"secretId": None
+	}
+)
+
+Tables.heartrate.default( # Allocate heartrate table
+	{
+		"address": None,
+		"char": None
 	}
 )
 

@@ -24,7 +24,7 @@ class Window_ParametersControl_ShockerCodeField(QLineEdit, RFT_Object):
 		self.setText(Tables.shocker.code)
 		self.setPlaceholderText("Code")
 		self.setFixedSize(150, 25)
-		self.setEchoMode(QLineEdit.EchoMode.Password)
+		# self.setEchoMode(QLineEdit.EchoMode.Password)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

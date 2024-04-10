@@ -5,13 +5,13 @@ from engine.spotify import *
 
 
 
-__all__ = ("Window_ParametersControl_EnableChatBox",)
+__all__ = ("Window_ParametersControl_ChatBox_EnableChatBox",)
 
 
 
 
 
-class Window_ParametersControl_EnableChatBox(QCheckBox, RFT_Object):
+class Window_ParametersControl_ChatBox_EnableChatBox(QCheckBox, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 

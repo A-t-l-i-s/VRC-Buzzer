@@ -5,13 +5,13 @@ from engine.spotify import *
 
 
 
-__all__ = ("Window_ParametersControl_SpotifyBox",)
+__all__ = ("Window_ParametersControl_ChatBox_SpotifyBox",)
 
 
 
 
 
-class Window_ParametersControl_SpotifyBox(QCheckBox, RFT_Object):
+class Window_ParametersControl_ChatBox_SpotifyBox(QCheckBox, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 
@@ -39,9 +39,17 @@ class Window_ParametersControl_SpotifyBox(QCheckBox, RFT_Object):
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+		if (Tables.chatbox.spotify):
+			Spotify.init()
+
+
 
 	def _toggled(self, checked):
 		Tables.chatbox.spotify = checked
+
+		if (checked):
+			# Intialize spotify client
+			Spotify.init()
 
 
 

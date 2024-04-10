@@ -24,7 +24,7 @@ class Window_ParametersControl_ShockerTokenField(QLineEdit, RFT_Object):
 		self.setText(Tables.shocker.token)
 		self.setPlaceholderText("Token")
 		self.setFixedSize(150, 25)
-		self.setEchoMode(QLineEdit.EchoMode.Password)
+		# self.setEchoMode(QLineEdit.EchoMode.Password)
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

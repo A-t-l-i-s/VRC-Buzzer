@@ -11,18 +11,26 @@ __all__ = ("Spotify",)
 
 
 class Spotify(RFT_Object):
-	try:
-		client = spotipy.Spotify(
-			auth_manager = SpotifyOAuth( # Spotify OAuth Authentication
-				client_id = Data.spotify.clientId, # Client ID
-				client_secret = Data.spotify.secretId, # Secret Client ID
-				redirect_uri = "http://localhost:8080", # Redirect URI
-				scope = "user-read-playback-state user-read-currently-playing" # Access Scopes
-			)
-		)
+	client = None
+
+
+	@classmethod
+	def init(cls):
+		cls.client = None
 		
-	except:
-		client = None
+		if (Tables.spotify.clientId and Tables.spotify.secretId):
+			try:
+				cls.client = spotipy.Spotify(
+					auth_manager = SpotifyOAuth( # Spotify OAuth Authentication
+						client_id = Tables.spotify.clientId, # Client ID
+						client_secret = Tables.spotify.secretId, # Secret Client ID
+						redirect_uri = "http://localhost:8080", # Redirect URI
+						scope = "user-read-playback-state user-read-currently-playing" # Access Scopes
+					)
+				)
+				
+			except:
+				...
 
 
 

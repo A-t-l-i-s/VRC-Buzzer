@@ -1,11 +1,17 @@
 from engine.require import *
 from engine.spotify import *
+from engine.heartrate import *
 from engine.osc_server import *
 
+from .mutebox import *
 from .spotifybox import *
 from .timezonebox import *
 from .heartratebox import *
 from .enablechatbox import *
+
+from .spotifyclientid import *
+from .spotifysecretid import *
+from .heartrateaddress import *
 
 
 
@@ -57,29 +63,62 @@ class Window_ParametersControl_ChatBox(QFrame, RFT_Object):
 		self.layout.addWidget(self.title)
 
 
-		self.enableChatBox = Window_ParametersControl_EnableChatBox(self)
+		self.enableChatBox = Window_ParametersControl_ChatBox_EnableChatBox(self)
 		self.layout.addWidget(self.enableChatBox)
 
 
 		# Seperator
 		l = QLabel()
-		l.setFixedHeight(1)
+		l.setFixedHeight(3)
 		self.layout.addWidget(l)
 
 
-		self.spotifyBox = Window_ParametersControl_SpotifyBox(self)
+		self.spotifyBox = Window_ParametersControl_ChatBox_SpotifyBox(self)
 		self.layout.addWidget(self.spotifyBox)
 
-		self.timezoneBox = Window_ParametersControl_TimezoneBox(self)
-		self.layout.addWidget(self.timezoneBox)
+		self.spotifyClient = Window_ParametersControl_ChatBox_SpotifyClient(self)
+		self.layout.addWidget(self.spotifyClient)
 
-		self.heartrateBox = Window_ParametersControl_HeartRateBox(self)
-		self.layout.addWidget(self.heartrateBox)
+		self.spotifySecret = Window_ParametersControl_ChatBox_SpotifySecret(self)
+		self.layout.addWidget(self.spotifySecret)
 
 
 		# Seperator
 		l = QLabel()
-		l.setFixedHeight(1)
+		l.setFixedHeight(3)
+		self.layout.addWidget(l)
+
+
+		self.timezoneBox = Window_ParametersControl_ChatBox_TimezoneBox(self)
+		self.layout.addWidget(self.timezoneBox)
+
+
+		# Seperator
+		l = QLabel()
+		l.setFixedHeight(3)
+		self.layout.addWidget(l)
+
+
+		self.heartrateBox = Window_ParametersControl_ChatBox_HeartRateBox(self)
+		self.layout.addWidget(self.heartrateBox)
+
+		self.heartrateAddress = Window_ParametersControl_ChatBox_HeartRateAddress(self)
+		self.layout.addWidget(self.heartrateAddress)
+
+
+		# Seperator
+		l = QLabel()
+		l.setFixedHeight(3)
+		self.layout.addWidget(l)
+
+
+		self.muteBox = Window_ParametersControl_ChatBox_MuteBox(self)
+		self.layout.addWidget(self.muteBox)
+
+
+		# Seperator
+		l = QLabel()
+		l.setFixedHeight(3)
 		self.layout.addWidget(l)
 
 
@@ -100,8 +139,32 @@ class Window_ParametersControl_ChatBox(QFrame, RFT_Object):
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+		# ~~~~~~~~~~~~~ Timer ~~~~~~~~~~~~
+		self.timer = QTimer()
+		self.timer.setInterval(50)
+		self.timer.timeout.connect(self._timeout)
+		self.timer.start()
+		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
 	# ~~~~~~~~~~~~ Methods ~~~~~~~~~~~
+	def _timeout(self):
+		for w, e in (
+			(self.enableChatBox, Tables.chatbox.enabled),
+			(self.spotifyBox, Tables.chatbox.spotify),
+			(self.timezoneBox, Tables.chatbox.timezone),
+			(self.heartrateBox, Tables.chatbox.heartrate),
+			(self.muteBox, Tables.chatbox.mute),
+		):
+			if (w.isChecked() != e):
+				w.setChecked(e)
+
+
+
+
+
+
 	def loop(self):
 		while not Data.qt.app.exiting:
 			if (Tables.chatbox.enabled):
@@ -144,10 +207,16 @@ class Window_ParametersControl_ChatBox(QFrame, RFT_Object):
 
 				if (Tables.chatbox.heartrate):
 					# Get heart rate
-					v = Data.heartrate.value
+					v = HeartRate.value
 
 					if (v):
 						text += f"\v❤︎ {v}"
+
+
+
+				if (Tables.chatbox.mute):
+					# Get is muted
+					text += "\v🔇"
 
 
 

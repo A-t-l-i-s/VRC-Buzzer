@@ -13,6 +13,11 @@ from engine.osc_server import *
 
 
 if (__name__ == "__main__"):
+	# ~~~~~ Asyncio Nesting Patch ~~~~
+	nest_asyncio.apply()
+	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 	# ~~~~ Kill Existing Instances ~~~
 	e = Path(Data.intiface.executable)
 	

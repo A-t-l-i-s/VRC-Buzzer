@@ -5,13 +5,13 @@ from engine.spotify import *
 
 
 
-__all__ = ("Window_ParametersControl_HeartRateBox",)
+__all__ = ("Window_ParametersControl_ChatBox_HeartRateBox",)
 
 
 
 
 
-class Window_ParametersControl_HeartRateBox(QCheckBox, RFT_Object):
+class Window_ParametersControl_ChatBox_HeartRateBox(QCheckBox, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 

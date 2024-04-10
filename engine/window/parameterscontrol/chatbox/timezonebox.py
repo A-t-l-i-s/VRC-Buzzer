@@ -5,13 +5,13 @@ from engine.spotify import *
 
 
 
-__all__ = ("Window_ParametersControl_TimezoneBox",)
+__all__ = ("Window_ParametersControl_ChatBox_TimezoneBox",)
 
 
 
 
 
-class Window_ParametersControl_TimezoneBox(QCheckBox, RFT_Object):
+class Window_ParametersControl_ChatBox_TimezoneBox(QCheckBox, RFT_Object):
 	def __init__(self, parent):
 		super().__init__(parent)
 
